@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "Dawood Ali Academic Qualifications";
+
+}
+
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">Academic Qualifications/h1>
+                <h1 class="page-subhead-line">
+                    “ Education is the passport to the future, for tomorrow belongs to those who prepare for it today.”
+                </h1>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Institute</th>
+                            <th>Dates</th>
+                            <th>Level</th>
+                            <th>Links</th>
+                          
+                        </tr>
+                    </thead>
+                    <tbody>
+						<tr>
+                            <td>1</td>
+                            <td>
+                                <img src="~/assets/img/OtagoLogo.png" class="img-thumbnail" height="45px" width="65px" />
+                                University of Otago
+                            </td>
+                            <td>2022 -- 2024</td>
+                            <td>MBA - Master of Business Administration</td>
+                            <td><a href="https://www.otago.ac.nz/mba" target="_blank" >Link</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <img src="~/assets/img/fastlogo.png" class="img-thumbnail" height="45px" width="65px" />
+                                National University Of Computer & Emerging Sciences (FAST)
+                            </td>
+                            <td>2004 -- 2008</td>
+                            <td>BS - Computer Science</td>
+                            <td><a href="http://nu.edu.pk" target="_blank" >Link</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <img src="~/assets/img/SPC-logo.gif" class="img-thumbnail" height="45px" width="65px" />
+                                Saint Patrick's Govt College Karach Pakistan
+                            </td>
+                            <td>2002 -- 2004</td>
+                            <td>Inter mediate education Science Pre-engineering  </td>
+                            <td><a href="http://www.stpatrickscollege.edu.pk/" target="_blank">Link</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <img src="~/assets/img/hpsLogo.jpg" class="img-thumbnail" height="45px" width="65px" />
+                                Habib Public School Karachi Pakistan
+                            </td>
+                            <td>1992 -- 2002</td>
+                            <td>Primary & Secondary Schooling with major science subjects.  </td>
+                            <td><a href="http://habibschools.edu.pk" target="_blank">Link</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <!-- /. PAGE INNER  -->
+</div>
+<!-- /. PAGE WRAPPER  -->
+

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <link href="~/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <link href="~/css/basic.css" rel="stylesheet">
+    <link href="~/css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="Official/personal web of Dawood Ali.">
+    <meta name="keywords" content="Dawood Ali, ICT Professional, New Zealand">
+    <meta name="author" content="Dawood Ali">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142529557-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142529557-1');
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Dawood Ali</a>
+            </div>
+            <div class="header-right">
+                <a href="mailto:dawoodali@gmail.com" title="Email"><i class="fa fa-envelope small" style="color:black;"> <b>dawoodali@gmail.com</b></i></a> <br>
+                <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"> <i class="fa fa-linkedin pull-right" style="color:black;"></i></a>
+                <a href="#" title="Skype"><i class="fa fa-skype pull-right" style="color:black;"></i></a>
+                <a href="https://www.facebook.com/prodawood/?fref=ts" target="_blank" title="Facebook"> <i class="fa fa-facebook pull-right" style="color:black;"></i></a>
+            </div>
+        </nav>
+
+        <nav class="navbar-default navbar-side">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="~/assets/img/Dawood.jpg" class="img-responsive" alt="Dawood Ali">
+                            <div class="inner-text" style="margin-top:-63px;">
+                                ICT Expert<br>Proven Record
+                            </div>
+                        </div>
+                    </li>
+                    <li><a asp-area="" asp-page="/Index"><i class="fa fa-home"></i> Profile</a></li>                  
+                    <li><a asp-area="" asp-page="/WorkHistory"><i class="fa fa-briefcase"></i> Career History</a></li>                   
+                    <li><a asp-area="" asp-page="/Education"><i class="fa fa-certificate"></i> Academic Qualifications</a></li>
+                    <li><a asp-area="" asp-page="/Skills"><i class="fa fa-chain"></i> Skills / Expertise</a></li>
+                    <li><a asp-area="" asp-page="/PersonalInfo"><i class="fa fa-user"></i> Personal Information</a></li>
+                    <li><a asp-area="" asp-page="/Videos"><i class="fa fa-film"></i> Videos</a></li>
+                    <li><a href="~/assets/Files/DawoodAli.pdf" target="_blank"><i class="fa fa-file"></i> Download CV</a></li>
+                    <li><a href="#"><i class="fa fa-comment"></i> Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        @RenderBody()
+    </div>
+
+    <div id="footer-sec">
+        <div style="text-align:center;">www.dawoodali.co.nz &copy; @DateTime.UtcNow.Year</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/assets/js/jquery-1.10.2.js"></script>
+    <script src="~/assets/js/bootstrap.js"></script>
+    <script src="~/assets/js/jquery.metisMenu.js"></script>
+    <script src="~/assets/js/custom.js"></script>
+    <script src="~/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="~/assets/js/jquery.mixitup.min.js"></script>
+    <script src="~/assets/js/galleryCustom.js"></script>
+    <script src="~/lib/moment/moment.min.js"></script>
+    <script src="~/lib/datetimepicker/datetimepicker.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
