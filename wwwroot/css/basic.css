@@ -66,17 +66,30 @@ body {
 
 .navbar-cls-top .navbar-brand {
     color: #fff;
-    background: #202020;
     width: 260px;
-    text-align: center;
-    height: 75px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 900;
-    padding-top: 25px;
-    text-transform:uppercase;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding-top: 15px;
 }
 
+
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
 .header-right {
     color: #fff;
     padding: 15px 50px 5px 50px;
@@ -89,29 +102,57 @@ body {
     color: #fff;
 }
 
-.user-img-div {
-    min-height: 110px;
+.img-logo{
+    max-height:30px;
+}
+.page-caption {   
     padding: 20px;
     background-color: #4380B8;
+    color:wheat;
 }
 
-    .user-img-div img {
-        max-height: 60px;
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor {
+    font-size: 19px;     
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+/* Animation */
+.typewriter-animation {  
+    animation: typewriter 5s steps(50) 1s 1 normal both, blinkingCursor 500ms steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
     }
 
-    .user-img-div .inner-text {
-        text-align: right;
-        position: relative;
-        color: #fff;
-        font-weight: 800;
-        line-height: 25px;
+    to {
+        width: 100%;
     }
+}
+
+@keyframes blinkingCursor {
+    from {
+        border-right-color: rgba(255,255,255,.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
 
 .active-menu {
     background-color: #00CA79!important;
 }
 .active-menu-top {
-    background-color: #000!important;
+    background-color: #000 !important;
 }
 
 .arrow {
@@ -166,7 +207,10 @@ body {
         outline: 0;
     }
 
-
+.panel-title b{
+    color:black;
+    font-weight:bold;
+}
 
 .nav-second-level > li:last-child > a:after,
 .nav-third-level > li:last-child > a:after {
