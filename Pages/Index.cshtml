@@ -5,81 +5,33 @@
 }
 
 @{
-	ViewBag.Title = "Welcome";
+	ViewBag.Title = "Welcome to my website.";
 }
 
 <div id="page-wrapper">
-	<div id="page-inner">
-		<div class="row">
-			<div class="col-md-12">
-				<h1 class="page-head-line">Dawood Ali</h1>
-				<h1 class="page-subhead-line">“Walking on water and developing software from a specification are easy if both are frozen.”  </h1>
-			</div>
-		</div>
+	<div id="page-inner-home">		
 		<!-- /. ROW  -->
 		<div class="row">
 			<div class="col-md-12">
-				<div class="col-md-10">
-					<div class="alert alert-info">
-						<p>
-							<b>Hi,</b> <br />
-							@{
-								var expYear = (DateTime.Now.Year - 2008).ToString();
-							}
-							This is Dawood Ali A self-motivated technology driven IT Expert having vast experience of more than <label> @expYear </label> years in information system design and development, with every day learning characteristics along with human friendly communication skills.<br />
-						</p>
+				<div class="col-md-5 center-block" style="text-align:center; vertical-align:middle; margin-bottom:25px; margin-top:5px; ">
+					<img src="~/assets/img/myAvatar.jpg" style=" margin-right:2px; width: 100%; height: auto;"  alt="Picture of Dawood Ali." />
 
-						<p>
-							This is my professional online portal which is sufficient enough to provide you all the details related to my technical capabilities,<br />
-							over here you can see my career journey, my academic / personal background, download my cv and contact me as well.<br />
-						</p>
+				</div>
+				<div class="col-md-7">
+					<div style="background-color:white; ">
 
-						<p>
-							So feel free to have a detail review and don’t hesitate to contact me for if you think you have some wonderful opportunities for me.<br />
-						</p>
-
-						<p>
-
-
-							<b>Regards</b>
-						</p>
+						<h1>Hello, </h1>
+						<div style="display:inline-block;">
+							<div class="typed-out">Welcome to my website.</div>
+						</div>
 
 					</div>
 				</div>
-				<div class="col-md-2 center-block" style="text-align:center; vertical-align:middle; margin-bottom:25px; margin-top:5px; ">
-                    <img src="~/assets/img/dawoodpg.png" style="max-height:220px; margin-right:2px; width: 100%; height: auto;" class="img-circle" alt="Picture of Dawood Ali." />
-
-				</div>
+				
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="col-md-4">
-				<div class="main-box mb-dull">
-					<a href="#">
-						<i class="fa fa-user fa-5x"></i>
-						<h5>Exceptionally talented, what others think about me</h5>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="main-box mb-dull">
-					<a href="#">
-						<i class="fa fa-certificate fa-5x"></i>
-						<h5>BS in Computer Science & MBA Degree Holder</h5>
-					</a>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="main-box mb-dull">
-					<a href="#">
-						<i class="fa fa-globe fa-5x"></i>
-						<h5>Have worked with various Nationalities</h5>
-					</a>
-				</div>
-			</div>
-
-		</div>
+	
 
 	</div>
 	<!-- /. PAGE INNER  -->
