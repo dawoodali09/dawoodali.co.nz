@@ -111,7 +111,22 @@ body {
     color:wheat;
 }
 
+.page-caption-bot {
+    padding: 5px;
+    
+    letter-spacing:8px;
+    color: #4380B8;
+    vertical-align: middle;
+    text-align:center;
+    background-color:black;
+}
 
+.page-caption-footer {
+    letter-spacing: 2px;    
+    vertical-align: middle;
+    background-color: black;
+    float:right;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
