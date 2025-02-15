@@ -31,6 +31,7 @@
     </script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body style="background-color:black;">
     <div id="wrapper">
@@ -66,14 +67,16 @@
                             <label style="margin-top:10px; margin-left:-10px;" class="cursor typewriter-animation">@ViewBag.Title</label>
                         </div>
                     </li>
-                    <li><a asp-area="" asp-page="/Index"><i class="fa fa-home"></i> Profile</a></li>
-                    <li><a asp-area="" asp-page="/WorkHistory"><i class="fa fa-briefcase"></i> Career History</a></li>
-                    <li><a asp-area="" asp-page="/Education"><i class="fa fa-certificate"></i> Academic Qualifications</a></li>
-                    <li><a asp-area="" asp-page="/Skills"><i class="fa fa-chain"></i> Skills / Expertise</a></li>
-                    <li><a asp-area="" asp-page="/PersonalInfo"><i class="fa fa-user"></i> Personal Information</a></li>
-                    <li><a asp-area="" asp-page="/Videos"><i class="fa fa-film"></i> Videos</a></li>
-                    <li><a href="~/assets/Files/DawoodAli.pdf" target="_blank"><i class="fa fa-file"></i> Download CV</a></li>
-                    <li><a href="#"><i class="fa fa-comment"></i> Contact Me</a></li>
+                    <li><a asp-area="" asp-page="/Index"><i class="fa fa-home"></i> Home</a></li>                    
+                    <li><a asp-area="" asp-page="/PersonalInfo"><i class="fa fa-user"></i> About Me</a></li>
+                    <li><a asp-area="" asp-page="/WorkHistory"><i class="fa fa-road"></i> Experience</a></li>
+                    <li><a asp-area="" asp-page="/Education"><i class="fa fa-mortar-board"></i>Education & Certifications</a></li>
+                    <li><a asp-area="" asp-page="/Skills"><i class="fa fa-book"></i> Skills & Expertise</a></li>
+                    <li><a asp-area="" asp-page="/PersonalInfo"><i class="fa fa-pie-chart"></i> Projects & Case Studies</a></li>
+                    <li><a asp-area="" asp-page="/Skills"><i class="fa fa-podcast"></i> Thought Leadership - Blog</a></li>
+                    <li><a asp-area="" asp-page="/Videos"><i class="fa fa-film"></i> Media & Videos</a></li>
+                    <li><a href="~/assets/Files/DawoodAli.pdf" target="_blank"><i class="fa fa-cloud-download"></i> Download Resume</a></li>
+                    <li><a href="#"><i class="fa fa-address-book"></i> Contact</a></li>
                 </ul>
             </div>
         </nav>
