@@ -8,9 +8,14 @@
 	ViewBag.Title = "Welcome to my website.";
 }
 
-
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var video = document.getElementById("page-inner-home");
+		video.play().catch(error => console.log("Autoplay prevented:", error));
+	});
+</script>
 <div id="page-wrapper">
-	<video autoplay muted id="page-inner-home" class="video-home">
+	<video autoplay muted playsinline id="page-inner-home" class="video-home">
 		<source src="~/assets/files/bghome5.mp4" type="video/mp4">
 		Your browser does not support HTML5 video.
 

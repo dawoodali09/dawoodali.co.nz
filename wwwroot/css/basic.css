@@ -40,16 +40,12 @@ body {
 }
 
 
-#page-inner-home {
- 
+#page-inner-home { 
     width: 100%;
-    height:auto;
     margin: 10px 10px 10px -1px;
     padding: 10px;    
     background-color: #4B4E53;
     background-image: linear-gradient(147deg, #4B4E53 0%, #000000 74%);
-   
-   
 }
 .page-head-line {
     font-size: 30px;
