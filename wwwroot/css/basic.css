@@ -34,9 +34,9 @@ body {
 #page-inner {
     width: 100%;
     margin: 10px 20px 10px -1px;
-    background-color: #fff!important;
+    background-color: #f3edecff;!important;
     padding: 10px;
-    min-height: 100px;
+    min-height: 750px;
 }
 
 
@@ -67,6 +67,11 @@ body {
 
 }
 
+.custom-divider {
+    height: 2px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
 
 .video-home {
 }
@@ -313,7 +318,7 @@ body {
 @media (min-width:768px) {
     #page-wrapper {
         margin: 0 0 0 260px;
-        padding: 15px 30px;
+        padding: 5px 5px;
         min-height: 800px;
     }
 
@@ -348,3 +353,4 @@ body {
         width: 99%
     }
 }
+ 

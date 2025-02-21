@@ -14,7 +14,7 @@
 /*==============================================
     BASIC  STYLES    
     =============================================*/
-body {
+/*body {
     font-family: 'Open Sans', sans-serif;
     line-height:25px;
 }
@@ -56,7 +56,7 @@ body {
     margin-bottom:30px;
     border-bottom:1px dashed #00CA79;
 
-}
+}*/
 
 
 /*==============================================
@@ -64,7 +64,7 @@ body {
     =============================================*/
 
 
-.navbar-cls-top .navbar-brand {
+/*.navbar-cls-top .navbar-brand {
     color: #fff;
     background: #202020;
     width: 260px;
@@ -212,11 +212,11 @@ body {
 
 .nav > li > a > i {
     margin-right: 10px;
-}
+}*/
 /*==============================================
     FOOTER  STYLES    
     =============================================*/
-#footer-sec {
+/*#footer-sec {
     background-color: #000;
     padding: 20px 50px;
     color: #6a6a4f;
@@ -229,12 +229,12 @@ body {
     #footer-sec a:hover,a:focus {
         color:#fff;
         text-decoration:none;
-    }
+    }*/
 /*==============================================
     MEDIA QUERIES     
     =============================================*/
 
-@media (min-width:768px) {
+/*@media (min-width:768px) {
     #page-wrapper {
         margin: 0 0 0 260px;
         padding: 15px 30px;
@@ -251,4 +251,4 @@ body {
     .navbar {
         border-radius: 0px;
     }
-}
+}*/

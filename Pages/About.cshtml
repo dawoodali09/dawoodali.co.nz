@@ -6,34 +6,53 @@
 @{
     ViewBag.Title = "Who am I ";
 }
-<div id="page-wrapper" style="background-color:black;">
-    <div id="page-inner" style="background-color:black;">
-        <div class="row" style="background-color:black;">
+<div id="page-wrapper" >
+    <div id="page-inner" >
+        <div class="row" >
             <div class="col-md-12 text-center">              
                 <h1 class="neon-text page-head-line">My Life Philosphy</h1>
-                <h2 class="page-subhead-line cursor  typewriter-animation" style="margin-top:15px; padding:15px;"> “The universe is simple and calm; its laws are elementary. Simplicity is the key to unlocking its mysteries.”</h2>
+                <h2 class="page-subhead-line cursor  typewriter-animation" style="margin-top:15px; padding:15px; font-weight:bolder; letter-spacing:1px;"> “The universe is simple and calm; its laws are elementary. Simplicity is the key to unlocking its mysteries.”</h2>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-8">
-                <div class="alert alert-info">
-                    <p>
-                        Hi, I’m <b>Dawood Ali</b>, a seasoned technology professional with over <label>@(DateTime.Now.Year - 2008)</label> years of experience in information systems design and development. My expertise spans across banking, aviation, payments, e-commerce, media, and broadcasting, where I have successfully led teams and delivered innovative solutions. With a strong foundation in Computer Science from FAST-NU Karachi and an MBA from the University of Otago, New Zealand, I bring a unique blend of technical expertise and business acumen to the table.
-                    </p>
-                    <p>
-                        My career journey has taken me across the UAE and New Zealand, working with global organizations and gaining invaluable experience in leadership, team management, and cutting-edge technology solutions. I specialize in developing small to large-scale applications, driving digital transformation, and bridging the gap between technology and human-centric solutions.
-                    </p>
-                    <p>
-                        Beyond my professional endeavors, I have a passion for music, videography, photography, water sports, and traveling. I enjoy creating video logs and capturing life’s moments, which fuels my creativity and enhances my problem-solving approach in tech projects.
-                    </p>
-                    <p>
-                        This website serves as my professional portfolio, where you can explore my career journey, skills, key projects, case studies, and blog insights. Feel free to download my resume or reach out if you’d like to collaborate or discuss exciting opportunities. Let’s connect and create something amazing together!
-                    </p>
+                <div class="card shadow-sm border-0" style="background-color: #6C7171; border-radius: 10px;   min-height: 515px;">
+                    <div class="card-body" style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 30px; color:#E0D1E6; justify-content:normal;">
+                        <p></p>
+                        <p>
+                            Hi, I’m <b>Dawood Ali</b>, a seasoned technology professional with over <label>@(DateTime.Now.Year - 2008)</label> years of experience in information systems design and development.
+                        </p>
+
+                        <p>
+                            My expertise spans across banking, aviation, payments, e-commerce, media, and broadcasting, where I have successfully led teams and delivered innovative solutions. With a strong foundation in Computer Science from FAST-NU Karachi and an MBA from the University of Otago, New Zealand, I bring a unique blend of technical expertise and business acumen to the table.
+                        </p>
+
+                        <p>
+                            My career journey has taken me across the UAE and New Zealand, working with global organizations and gaining invaluable experience in leadership, team management, and cutting-edge technology solutions. I specialize in developing small to large-scale applications, driving digital transformation, and bridging the gap between technology and human-centric solutions.
+                        </p>
+
+                        <p>
+                            Beyond my professional endeavors, I have a passion for music, videography, photography, water sports, and traveling. I enjoy creating video logs and capturing life’s moments, which fuels my creativity and enhances my problem-solving approach in tech projects.
+                        </p>
+
+                        <p>
+                            This website serves as my professional portfolio, where you can explore my career journey, skills, key projects, case studies, and blog insights. Feel free to download my resume or reach out if you’d like to collaborate or discuss exciting opportunities. Let’s connect and create something amazing together!
+                        </p>
+                    </div>
                 </div>
+
             </div>
-            <div class="col-md-4 text-center">
-                <img src="~/assets/img/dawoodpg.png" class="img-circle" alt="Dawood Ali" style="max-height:220px; width:100%; height:auto;" />
+            <div class="col-md-4 text-center d-flex align-items-center justify-content-center">
+                <img src="~/assets/img/ProPicHead.jpg" class="img-fluid" alt="Dawood Ali" style="max-height: 100%; width: 100%; object-fit: cover; border-radius: 10px;">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="custom-divider"></div>
+                </div>
             </div>
         </div>
 
@@ -41,8 +60,8 @@
             <div class="col-md-4">
                 <div class="main-box mb-dull">
                     <a href="#">
-                        <i class="fa fa-user fa-5x"></i>
-                        <h5>What others say about me</h5>
+                        <i class="fa fa-rocket fa-5x"></i>
+                        <h5>Exceptionally talented, What others say about me</h5>
                     </a>
                 </div>
             </div>
