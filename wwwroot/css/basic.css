@@ -177,7 +177,7 @@ body {
 /* Remove Typewriter Effect on Mobile */
 @media screen and (max-width: 1024px) {
     .responsive h2 {
-        margin-top:35px;
+        margin-top:55px;
         font-size: 14px; /* Smaller text */
         white-space: normal; /* Allows wrapping */
         overflow: visible; /* Prevents cut-off text */
@@ -186,10 +186,7 @@ body {
         font-weight: normal; /* Adjusts font weight */
         letter-spacing: 0.5px; /* Reduces letter spacing */
         font-style:normal;
- 
-        
     }
-
     /* Disable typewriter effect */
     .typewriter-animation {
         animation: none !important;
