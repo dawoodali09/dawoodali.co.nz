@@ -9,11 +9,14 @@
 <div id="page-wrapper" >
     <div id="page-inner" >
         <div class="row" >
-            <div class="col-md-12 text-center">              
-                <h1 class="neon-text page-head-line">My Life Philosphy</h1>
-                <h2 class="page-subhead-line cursor  typewriter-animation" style="margin-top:15px; padding:15px; font-weight:bolder; letter-spacing:1px;"> “The universe is simple and calm; its laws are elementary. Simplicity is the key to unlocking its mysteries.”</h2>
+            <div class="col-md-12 text-center responsive">
+                <h1 class="neon-text page-head-line">My Life Philosophy</h1>
+                <h2 class="page-subhead-line cursor  typewriter-animation" 
+                style="margin-top:15px; padding:15px; font-weight:bolder; letter-spacing:1px;"> “The universe is simple and calm; its laws are elementary. Simplicity is the key to unlocking its mysteries.”</h2>
             </div>
         </div>
+
+       
 
         <div class="row">
             <div class="col-md-8">
@@ -123,3 +126,11 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) {
+        document.querySelector(".cursor").classList.add("mobile-h2");
+    }
+});
+</script>
+

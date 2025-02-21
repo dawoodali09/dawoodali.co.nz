@@ -152,15 +152,15 @@ body {
 
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
-/* Cursor */
 .cursor {
-    font-size: 19px;     
+    font-size: 19px;
     white-space: nowrap;
     overflow: hidden;
     transform: translateY(-50%);
 }
-/* Animation */
-.typewriter-animation {  
+
+/* Typewriter animation (Only for Desktop) */
+.typewriter-animation {
     animation: typewriter 5s steps(50) 1s 1 normal both, blinkingCursor 500ms steps(50) infinite normal;
 }
 
@@ -174,17 +174,27 @@ body {
     }
 }
 
-@keyframes blinkingCursor {
-    from {
-        border-right-color: rgba(255,255,255,.75);
+/* Remove Typewriter Effect on Mobile */
+@media screen and (max-width: 1024px) {
+    .responsive h2 {
+        margin-top:35px;
+        font-size: 14px; /* Smaller text */
+        white-space: normal; /* Allows wrapping */
+        overflow: visible; /* Prevents cut-off text */
+        padding: 10px; /* Adjusted padding */
+        text-align: center; /* Centers the text */
+        font-weight: normal; /* Adjusts font weight */
+        letter-spacing: 0.5px; /* Reduces letter spacing */
+        font-style:normal;
+ 
+        
     }
 
-    to {
-        border-right-color: transparent;
+    /* Disable typewriter effect */
+    .typewriter-animation {
+        animation: none !important;
     }
 }
-
-
 .active-menu {
     background-color: #00CA79!important;
 }
