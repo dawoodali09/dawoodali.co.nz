@@ -2,22 +2,61 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-}
-
-@{
-	ViewBag.Title = "Welcome to my website.";
+    ViewBag.Title = "Welcome to my website.";
 }
 
 <script>
-	document.addEventListener("DOMContentLoaded", function() {
-		var video = document.getElementById("page-inner-home");
-		video.play().catch(error => console.log("Autoplay prevented:", error));
-	});
+    document.addEventListener("DOMContentLoaded", function() {
+        var video = document.getElementById("page-inner-home");
+        if (video) {
+            video.play().catch(error => console.log("Autoplay prevented:", error));
+        }
+    });
 </script>
-<div id="page-wrapper">
-	<video autoplay muted playsinline id="page-inner-home" class="video-home">
-		<source src="~/assets/files/bghome5.mp4" type="video/mp4">
-		Your browser does not support HTML5 video.
 
-	</video>
+<div id="page-wrapper">
+    <!-- Video for Desktop View -->
+    <div class="video-container">
+        <video autoplay muted playsinline id="page-inner-home" class="video-home">
+            <source src="~/assets/files/bghome5.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!-- Static Div for Mobile View -->
+    <div class="mobile-container" style="border:thin; border-color:yellow; background-image: url('/assets/img/mobilebg.png'); background-size: cover; background-repeat: no-repeat; background-position: center; margin:auto; padding:unset; justify-content:center; text-align:center; color:aliceblue; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+        <h1 style="white-space: nowrap; font-size:24px; text-decoration:solid;">Welcome to My Professional Space</h1>
+        <div class="profile-img" style="text-align:center; align-content:center;">
+            <center>
+                <img src="/assets/img/myAvatar.jpg" class="img-responsive img-circle" style="max-height:200px;" />
+            </center>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="custom-divider"></div>
+                </div>
+            </div>
+        </div>
+        <div style="background:rgba(0, 0, 0, 0.5); padding: 10px; border-radius: 5px; text-align:justify; color:antiquewhite; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size:14px;">
+            <p>
+                I'm Dawood Ali, a seasoned technology professional with extensive experience across banking, aviation, payments, e-commerce, media, and broadcasting.
+                With strong leadership and interpersonal skills, I bring a unique blend of technical expertise and business acumen, backed by qualifications in Computer Science
+                and Business Administration from reputable institutions.
+           </p>
+            <p>
+                This website is your gateway to exploring my career journey, skills, key projects, case studies, and insights
+                through my blog. 
+            </p>
+            <p>
+                You can also download my resume and connect with me for potential collaborations. Feel free to explore and get to know more about my work!
+            </p>
+        <div class="row">
+            <div class="col-12">
+                <div class="custom-divider"></div>
+            </div>
+        </div>
+        </div>
+    </div>
+
 </div>
