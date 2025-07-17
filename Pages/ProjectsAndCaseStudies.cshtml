@@ -1,8 +1,77 @@
 ﻿@page
 @model dawoodali.co.nz.Pages.ProjectsAndCaseStudiesModel
-@{
-}
-<div>
-    Coming soon.
 
+@{
+    ViewBag.Title = "Projects and Cases";
+}
+
+<style>
+    .col-12 {
+        padding: 10px;
+    }
+
+    h3 {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+   
+
+    a {
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+
+
+        div[style*="box-shadow"]:hover {
+            transform: scale(0.99);
+        }
+</style>
+
+
+<div id="page-wrapper">
+    <div id="page-inner">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-head-line">Past Academic and Professional Projects</h1>
+                <h1 class="page-subhead-line">
+                    “Throughout my career and education, I have gained valuable insights and expertise from the projects I have undertaken. Each project has contributed to my professional growth, refining my skills and deepening my knowledge. I believe that the lessons learned and the outcomes achieved can serve as valuable references for others, offering insights and inspiration for similar challenges and opportunities.”
+                </h1>
+            </div>
+        </div>
+        <!-- /. ROW -->
+        <div class="row">
+            @if (Model.Projects != null)
+            {
+                @for (int i = 0; i < Model.Projects.Count; i++)
+                {
+                    var project = Model.Projects[i];
+                    <div class="col-12" style="margin-bottom: 20px;">
+                        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                            <h3>@project["Project Name"]</h3>
+                            <p><strong>Date:</strong> @project["Dates"]</p>
+                            <p><strong>Type:</strong> @project["ProjectType"]</p>
+                            <div>@Html.Raw(project["Description"])</div>
+                            @if ((bool)project["HasLink"])
+                            {
+                                <p><a href="@project["Link"]" target="_blank" style="color: #007bff; text-decoration: underline;">Download</a></p>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No projects available to display.</p>
+            }
+        </div>
+    </div>
+    <!-- /. PAGE INNER -->
 </div>
+<!-- /. PAGE WRAPPER -->

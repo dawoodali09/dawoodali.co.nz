@@ -1,0 +1,155 @@
+[
+  {
+    "Project Name": "Economic impact of Alcohol minimum pricing",
+    "ProjectType": "Academic",
+    "Dates": "November 2022",
+    "Description": "<p><b>Presentation:</b> Alcohol Minimum Pricing and Subsidies – Market Impacts and Policy Analysis
+This presentation explores two key public policy tools: minimum alcohol pricing and government subsidies. It examines the economic impact of alcohol pricing on market equilibrium, elasticity, consumer welfare, and potential unintended consequences, using real-world examples like Scotland’s pricing policy. The second part analyzes the effects of subsidies, both in the absence and presence of externalities, highlighting cases where subsidies can lead to deadweight loss or enhance welfare—such as in vaccination programs. The content is grounded in economic theory with visual aids and practical illustrations.</p>",
+    "HasLink": true,
+    "Link": "/assets/Files/AlcoholMUP.pptx"
+  },
+  {
+    "Project Name": "Economics Journal and Extended Analysis",
+    "ProjectType": "Academic",
+    "Dates": "November 2022",
+    "Description": "<p>This assignment applies core economic concepts to real-life observations, combining analytical thinking with practical relevance. It includes a journal of <strong>eight short entries</strong>, each offering economic insights into everyday questions and phenomena. Topics range from high-skilled migration and inflation myths to market behaviors and government interventions. Each entry is grounded in economic theory, moving beyond surface-level commentary to highlight the behavioral and structural dynamics at play.</p><h3>Journal Entry Topics:</h3><ol><li>How employable high-skilled human resource migration is beneficial for everyone</li><li>Why can’t reserve banks print more money to pay off debt and make everyone rich?</li><li>What are the impacts of organ sales in a free market?</li><li>The cost of social media to an average individual’s life</li><li>NZ Best Start vs US Baby Bonds: A comparative welfare approach</li><li>Why income tax rates differ across income groups</li><li>Value depreciation via credit card transactions in an oligopolistic market</li><li>Why Apple and Microsoft offer student discounts on their devices</li></ol><p>The <strong>extended essay</strong> (Part 2) explores <em>why airline ticket prices vary over time</em> and why buyers often don’t secure their desired prices. This in-depth analysis covers concepts such as price discrimination, supply and demand fluctuations, and consumer surplus, demonstrating the application of microeconomic theory to dynamic pricing in the airline industry.</p><p>This assignment showcases how economic thinking enhances our understanding of policy, markets, and behavior in diverse real-world contexts.</p>",
+    "HasLink": true,
+    "Link": "/assets/Files/Economics-Journal.pdf"
+  },
+  {
+    "Project Name": "Lean 5S",
+    "ProjectType": "Academic",
+    "Dates": "May 2023",
+    "Description": "<p>Operational Excellense Presentation on Lean 5S.</p>",
+    "HasLink": true,
+    "Link": "/assets/Files/Lean5S.pdf"
+  },
+  {
+    "Project Name": "Operational Excellence Application",
+    "ProjectType": "Academic",
+    "Dates": "May 2023",
+    "Description": "<p>Application of Operational excellence on an organisational sub-unit to improve and enhance the outcomes.</p>",
+    "HasLink": true,
+    "Link": "/assets/Files/OEApplication.pdf"
+  },    
+  {
+    "Project Name": "High performance through engagement",
+    "ProjectType": "Academic",
+    "Dates": "July 2023",
+    "Description": "<p><b>Strategic Human Resource Management Presentation</b>  Why organisations, should adopt, HPtE, and what are some of the key elements.</p>",
+    "HasLink": true,
+    "Link": "/assets/Files//StrategicHR.pdf"
+  },
+    {
+        "Project Name": "Weather Forecast Application",
+        "ProjectType": "Professional",
+        "Dates": "Jul 2020",
+        "Description": "<p>Created a web app to display real-time <strong>weather updates</strong> using API integrations.</p>",
+        "HasLink": false,
+        "Link": ""
+    },
+    {
+        "Project Name": "Personal Portfolio Website",
+        "ProjectType": "Professional",
+        "Dates": "Jan 2021",
+        "Description": "<p>Designed a <strong>portfolio website</strong> to showcase projects and achievements.</p>",
+        "HasLink": true,
+        "Link": "https://example.com/portfolio"
+    },
+    {
+        "Project Name": "Data Visualization for Finance",
+        "ProjectType": "Professional",
+        "Dates": "Jun 2023",
+        "Description": "<p>Implemented <strong>interactive data visualizations</strong> for a financial reporting system.</p>",
+        "HasLink": false,
+        "Link": ""
+    },
+    {
+        "Project Name": "SaaS Platform Development",
+        "ProjectType": "Professional",
+        "Dates": "Apr 2022",
+        "Description": "<p>Built a scalable <em>SaaS platform</em> for managing customer data efficiently.</p>",
+        "HasLink": true,
+        "Link": "https://example.com/saas"
+    },
+    {
+        "Project Name": "Blockchain Wallet Integration",
+        "ProjectType": "Professional",
+        "Dates": "Sep 2022",
+        "Description": "<p>Integrated a secure <strong>blockchain wallet</strong> for cryptocurrency transactions.</p>",
+        "HasLink": true,
+        "Link": "~/Content/files/blockchain-wallet.pdf"
+    },
+    {
+        "Project Name": "Interactive Learning Module",
+        "ProjectType": "Academic",
+        "Dates": "Nov 2021",
+        "Description": "<p>Developed interactive <strong>e-learning modules</strong> for enhanced student engagement.</p>",
+        "HasLink": false,
+        "Link": ""
+    },
+    {
+        "Project Name": "Restaurant Management System",
+        "ProjectType": "Professional",
+        "Dates": "May 2023",
+        "Description": "<p>Created a full-stack application for managing <strong>restaurant operations</strong> efficiently.</p>",
+        "HasLink": true,
+        "Link": "https://example.com/restaurant"
+    },
+    {
+        "Project Name": "Mobile Game Development",
+        "ProjectType": "Professional",
+        "Dates": "Mar 2021",
+        "Description": "<p>Designed and launched an engaging <strong>mobile game</strong> with multiplayer functionality.</p>",
+        "HasLink": false,
+        "Link": ""
+    },
+    {
+        "Project Name": "IoT-Based Home Automation",
+        "ProjectType": "Professional",
+        "Dates": "Feb 2020",
+        "Description": "<p>Developed an <strong>IoT system</strong> for controlling home appliances remotely.</p>",
+        "HasLink": true,
+        "Link": "~/Content/files/home-automation.pdf"
+    },
+    {
+        "Project Name": "Social Media Analytics",
+        "ProjectType": "Professional",
+        "Dates": "Dec 2023",
+        "Description": "<p>Built an application to analyze and report on <strong>social media trends</strong> and performance.</p>",
+        "HasLink": false,
+        "Link": ""
+    },
+    {
+        "Project Name": "Healthcare Appointment System",
+        "ProjectType": "Professional",
+        "Dates": "Jan 2020",
+        "Description": "<p>Created a web-based system for booking and managing healthcare appointments.</p>",
+        "HasLink": true,
+        "Link": "https://example.com/healthcare"
+    },
+    {
+        "Project Name": "Travel Booking Application",
+        "ProjectType": "Professional",
+        "Dates": "Jun 2019",
+        "Description": "<p>Developed an app to simplify <strong>travel booking</strong> and itinerary management.</p>",
+        "HasLink": true,
+        "Link": "~/Content/files/travel.pdf"
+    },
+    {
+        "Project Name": "Augmented Reality Experience",
+        "ProjectType": "Academic",
+        "Dates": "Oct 2023",
+        "Description": "<p>Created an <strong>AR-based project</strong> to deliver immersive user experiences.</p>",
+        "HasLink": false,
+        "Link": ""
+    },
+    {
+        "Project Name": "Cybersecurity Awareness Platform",
+        "ProjectType": "Professional",
+        "Dates": "Sep 2021",
+        "Description": "<p>Built a platform for <strong>cybersecurity training</strong> and resources.</p>",
+        "HasLink": true,
+        "Link": "https://example.com/cybersecurity"
+    }
+]
