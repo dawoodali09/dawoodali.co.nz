@@ -1,10 +1,66 @@
 [
   {
+    "Project Name": "Professional consulting engagement report",
+    "ProjectType": "Academic",
+    "Dates": "OCT 2024",
+    "Description": "<p>(PCE) Professional consulting engagement report Final report, during the MBA studies </p>",
+    "HasLink": true,
+    "Link": "/assets/Files/Dawood Ali - PCE Report - (JIX Ltd).pdf"
+  },
+  {
+    "Project Name": "Professional consulting engagement plan",
+    "ProjectType": "Academic",
+    "Dates": "May 2024",
+    "Description": "<p>Project management plan for annual project (PCE). </p>",
+    "HasLink": true,
+    "Link": "/assets/Files/PCE-Project Management  Plan (Dawood A).pdf"
+  },
+  {
+    "Project Name": "TCS: Agility at scale (case analysis)",
+    "ProjectType": "Academic",
+    "Dates": "May 2024",
+    "Description": "<p>During strategy implementation, Case study analysis of TCS approach of adapting agile practices.  </p>",
+    "HasLink": true,
+    "Link": "/assets/Files/IBInbdividualAssignment.pdf"
+  },
+
+  {
+    "Project Name": "Garrard Japan case analysis (International busineess)",
+    "ProjectType": "Academic",
+    "Dates": "March 2024",
+    "Description": "<p>Individual assignment containing the case study analysis for Garrard Japan, intended to improve its profitability.  </p>",
+    "HasLink": true,
+    "Link": "/assets/Files/IBInbdividualAssignment.pdf"
+  },
+  {
+    "Project Name": "Imagination Gin International expansion plan",
+    "ProjectType": "Academic",
+    "Dates": "April 2024",
+    "Description": "<p>International business presentation on Imagination a NZ Gin brand, detailing the expansion plan.  </p>",
+    "HasLink": true,
+    "Link": "/assets/Files/IB Imagination Strategic task Force.pdf"
+  },
+  {
+    "Project Name": "Apple electric car (Case study analysis)",
+    "ProjectType": "Academic",
+    "Dates": "September 2024",
+    "Description": "<p>This report presents the analysis of a case study, related to Apple Inc initiative of smart electric car. </p>",
+    "HasLink": true,
+    "Link": "/assets/Files/Syndicate A_Group Assignment.pdf"
+  },
+  {
+    "Project Name": "Critical strategic plan analysis and recommendations",
+    "ProjectType": "Academic",
+    "Dates": "September 2024",
+    "Description": "<p>This report presents a comprehensive analysis of Westpac Banking Corporation's high-level strategic plan, encompassing key elements such as background information, the purpose and strategy of Westpac, macro and micro-level analyses, a review of its competitiveness and resources, and based on this analysis, some plausible strategic issues that are identified during my paper of strategic planning</p>",
+    "HasLink": true,
+    "Link": "/assets/Files/WBC_StrategicPlan.pdf"
+  },
+  {
     "Project Name": "Economic impact of Alcohol minimum pricing",
     "ProjectType": "Academic",
     "Dates": "November 2022",
-    "Description": "<p><b>Presentation:</b> Alcohol Minimum Pricing and Subsidies – Market Impacts and Policy Analysis
-This presentation explores two key public policy tools: minimum alcohol pricing and government subsidies. It examines the economic impact of alcohol pricing on market equilibrium, elasticity, consumer welfare, and potential unintended consequences, using real-world examples like Scotland’s pricing policy. The second part analyzes the effects of subsidies, both in the absence and presence of externalities, highlighting cases where subsidies can lead to deadweight loss or enhance welfare—such as in vaccination programs. The content is grounded in economic theory with visual aids and practical illustrations.</p>",
+    "Description": "<p><b>Presentation:</b> Alcohol Minimum Pricing and Subsidies – Market Impacts and Policy Analysis This presentation explores two key public policy tools: minimum alcohol pricing and government subsidies. It examines the economic impact of alcohol pricing on market equilibrium, elasticity, consumer welfare, and potential unintended consequences, using real-world examples like Scotland’s pricing policy. The second part analyzes the effects of subsidies, both in the absence and presence of externalities, highlighting cases where subsidies can lead to deadweight loss or enhance welfare—such as in vaccination programs. The content is grounded in economic theory with visual aids and practical illustrations.</p>",
     "HasLink": true,
     "Link": "/assets/Files/AlcoholMUP.pptx"
   },
@@ -31,7 +87,7 @@ This presentation explores two key public policy tools: minimum alcohol pricing 
     "Description": "<p>Application of Operational excellence on an organisational sub-unit to improve and enhance the outcomes.</p>",
     "HasLink": true,
     "Link": "/assets/Files/OEApplication.pdf"
-  },    
+  },
   {
     "Project Name": "High performance through engagement",
     "ProjectType": "Academic",
@@ -40,116 +96,84 @@ This presentation explores two key public policy tools: minimum alcohol pricing 
     "HasLink": true,
     "Link": "/assets/Files//StrategicHR.pdf"
   },
-    {
-        "Project Name": "Weather Forecast Application",
-        "ProjectType": "Professional",
-        "Dates": "Jul 2020",
-        "Description": "<p>Created a web app to display real-time <strong>weather updates</strong> using API integrations.</p>",
-        "HasLink": false,
-        "Link": ""
-    },
-    {
-        "Project Name": "Personal Portfolio Website",
-        "ProjectType": "Professional",
-        "Dates": "Jan 2021",
-        "Description": "<p>Designed a <strong>portfolio website</strong> to showcase projects and achievements.</p>",
-        "HasLink": true,
-        "Link": "https://example.com/portfolio"
-    },
-    {
-        "Project Name": "Data Visualization for Finance",
-        "ProjectType": "Professional",
-        "Dates": "Jun 2023",
-        "Description": "<p>Implemented <strong>interactive data visualizations</strong> for a financial reporting system.</p>",
-        "HasLink": false,
-        "Link": ""
-    },
-    {
-        "Project Name": "SaaS Platform Development",
-        "ProjectType": "Professional",
-        "Dates": "Apr 2022",
-        "Description": "<p>Built a scalable <em>SaaS platform</em> for managing customer data efficiently.</p>",
-        "HasLink": true,
-        "Link": "https://example.com/saas"
-    },
-    {
-        "Project Name": "Blockchain Wallet Integration",
-        "ProjectType": "Professional",
-        "Dates": "Sep 2022",
-        "Description": "<p>Integrated a secure <strong>blockchain wallet</strong> for cryptocurrency transactions.</p>",
-        "HasLink": true,
-        "Link": "~/Content/files/blockchain-wallet.pdf"
-    },
-    {
-        "Project Name": "Interactive Learning Module",
-        "ProjectType": "Academic",
-        "Dates": "Nov 2021",
-        "Description": "<p>Developed interactive <strong>e-learning modules</strong> for enhanced student engagement.</p>",
-        "HasLink": false,
-        "Link": ""
-    },
-    {
-        "Project Name": "Restaurant Management System",
-        "ProjectType": "Professional",
-        "Dates": "May 2023",
-        "Description": "<p>Created a full-stack application for managing <strong>restaurant operations</strong> efficiently.</p>",
-        "HasLink": true,
-        "Link": "https://example.com/restaurant"
-    },
-    {
-        "Project Name": "Mobile Game Development",
-        "ProjectType": "Professional",
-        "Dates": "Mar 2021",
-        "Description": "<p>Designed and launched an engaging <strong>mobile game</strong> with multiplayer functionality.</p>",
-        "HasLink": false,
-        "Link": ""
-    },
-    {
-        "Project Name": "IoT-Based Home Automation",
-        "ProjectType": "Professional",
-        "Dates": "Feb 2020",
-        "Description": "<p>Developed an <strong>IoT system</strong> for controlling home appliances remotely.</p>",
-        "HasLink": true,
-        "Link": "~/Content/files/home-automation.pdf"
-    },
-    {
-        "Project Name": "Social Media Analytics",
-        "ProjectType": "Professional",
-        "Dates": "Dec 2023",
-        "Description": "<p>Built an application to analyze and report on <strong>social media trends</strong> and performance.</p>",
-        "HasLink": false,
-        "Link": ""
-    },
-    {
-        "Project Name": "Healthcare Appointment System",
-        "ProjectType": "Professional",
-        "Dates": "Jan 2020",
-        "Description": "<p>Created a web-based system for booking and managing healthcare appointments.</p>",
-        "HasLink": true,
-        "Link": "https://example.com/healthcare"
-    },
-    {
-        "Project Name": "Travel Booking Application",
-        "ProjectType": "Professional",
-        "Dates": "Jun 2019",
-        "Description": "<p>Developed an app to simplify <strong>travel booking</strong> and itinerary management.</p>",
-        "HasLink": true,
-        "Link": "~/Content/files/travel.pdf"
-    },
-    {
-        "Project Name": "Augmented Reality Experience",
-        "ProjectType": "Academic",
-        "Dates": "Oct 2023",
-        "Description": "<p>Created an <strong>AR-based project</strong> to deliver immersive user experiences.</p>",
-        "HasLink": false,
-        "Link": ""
-    },
-    {
-        "Project Name": "Cybersecurity Awareness Platform",
-        "ProjectType": "Professional",
-        "Dates": "Sep 2021",
-        "Description": "<p>Built a platform for <strong>cybersecurity training</strong> and resources.</p>",
-        "HasLink": true,
-        "Link": "https://example.com/cybersecurity"
-    }
+  {
+    "Project Name": "Royal Map",
+    "ProjectType": "Professional",
+    "Dates": "Jan 2009",
+    "Description": "<p>Map.RoyalGroup.ae was my first assignment at Royal Group UAE. This online web portal was designed to store and provide economic insights for countries worldwide. The platform was utilized by economists and researchers to input data through an admin panel, while the front-end application generated comprehensive reports based on the collected information.</p><p><img class='img-responsive' src='/assets/img/RoyalMap.PNG'  /></p> <p>As the sole developer for this project, I was responsible for gathering requirements, designing the database, and implementing the entire web application. The system was developed using ASP.NET (C#) with Microsoft SQL Server as the backend and was hosted on-premises.</p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "Infinity TV Official website",
+    "ProjectType": "Professional",
+    "Dates": "Jan 2009",
+    "Description": "<p>As the sole web and software developer for Infinity Television FZ LLC, I led the transformation of the TV channel’s legacy static website into a dynamic Web 2.0 application, enabling seamless content management through a custom CMS. The application was developed using ASP.NET with a Microsoft SQL Server backend.</p><p><img class='img-responsive' src='/assets/img/infinityweb1.PNG'  /></p> <p>This project underwent multiple transformation phases, evolving into a fully managed platform where organizational teams could independently update and maintain content following structured business processes. My role encompassed comprehensive requirement analysis, including understanding the TV channel’s programming structure and designing a schedule management portal.</p><p><img class='img-responsive'  src='/assets/img/infinityweb2.PNG'  /></p><p>Beyond web development, I was also responsible for establishing and maintaining the digital and social media presence of the channel. Toward the later stages of my tenure, the platform was further enhanced to offer real-time TV streaming, providing an enriched experience for online viewers.</p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "Chargeback handler (Point-PAY)",
+    "ProjectType": "Professional",
+    "Dates": "2012-13",
+    "Description": "<p>Please reachout for more details.</p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "UAE-Properties.com",
+    "ProjectType": "Professional",
+    "Dates": "2008",
+    "Description": "<p>UAE-Properties.com, later rebranded as BetterLiving.ae, was a pioneering real estate property portal in the United Arab Emirates. Developed as an ASP.NET-based web application, it provided property owners and developers with a platform to list and showcase properties for sale across the UAE.</p> <p> The platform was initially launched in 2008 for a client of Expertek Cyber Solutions and functioned similarly to modern real estate portals such as RealEstate.co.nz. It featured both a client-facing website for property listings and an admin portal for managing content and maintaining CMS elements. The application leveraged Microsoft SQL Server for secure and efficient data storage.</p> <p>I contributed to this project as an Associate Software Developer, where my responsibilities included requirement analysis, database design, and application development. I was involved in writing the source code in VB.NET with ASP.NET Web Forms for the front-end, ensuring a seamless user experience. Additionally, I developed and optimized a significant number of stored procedures to enhance database performance and maintain data integrity.</p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "Tool Orbit",
+    "ProjectType": "Professional",
+    "Dates": "2008",
+    "Description": "<p>ToolOrbit.com is one of America's largest online portals for electrical tools. The application was developed using ASP.NET with a Microsoft SQL Server backend.</p> <p>During my tenure at Expertek Cyber Solutions in 2008, I contributed to various phases of the project as a supporting developer, assisting in the development and delivery of multiple application modules to enhance functionality and user experience. </p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "Infinity TV Live Streaming",
+    "ProjectType": "Professional",
+    "Dates": "2010",
+    "Description": "<p>In 2010, I worked on a pioneering project to bring television satellite transmission online, enabling live streaming over the internet. This involved leveraging various encoding techniques to convert the live SDI feed into a digital stream, which was then published online using RTMP protocols. The live TV streams were integrated into the official website and further extended to a mobile application for seamless online broadcasting.</p> <p> While such streaming technologies are now standard, at the time, this was an innovative initiative, and Infinity TV was among the first in the Middle East to bring its transmission online. Today, similar approaches are widely used by major live-streaming platforms like YouTube and Facebook Live.</p> <p>My role in this project included identifying the required hardware, developing content encoding applications, and designing both the web and mobile platforms to ensure smooth content delivery to end users.</p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "RTX Infinity ",
+    "ProjectType": "Professional",
+    "Dates": "2011",
+    "Description": "<p>RTX Infinity was a C# Windows Forms application that I developed during my tenure at Infinity TV. It was designed to integrate with Harris Inscriber RTX hardware to generate on-air graphics for live TV broadcasts.</p> <p>The application was later adopted by the TV channel to display stock exchange tickers and other notification tickers during transmissions, enhancing the visual presentation of real-time information for viewers. </p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "ORAD SMS feeds",
+    "ProjectType": "Professional",
+    "Dates": "2011",
+    "Description": "<p>This was a particularly innovative project, where we were tasked with displaying SMS messages from viewers across the UAE on live television with custom animations.</p> <p>To achieve this, we integrated Orad hardware for on-air graphic rendering and developed a real-time backend application that interacted with SMS service provider APIs. The system fetched messages sent by viewers via short codes, which varied by country, allowing seamless audience engagement. <br/>Beyond enhancing viewer interaction, this project also established a new revenue stream for the TV channel, as SMS-based participation became a monetized service. The solution was successfully implemented for Infinity TV 2, an Arabic music channel, strengthening its connection with its audience through real-time, two-way engagement. </p>",
+    "HasLink": false,
+    "Link": "#"
+  },
+  {
+    "Project Name": "Game show & Weather simulations",
+    "ProjectType": "Professional",
+    "Dates": "OCT 2010",
+    "Description": "<p>I developed a Windows Forms-based application to support various broadcasting needs for the TV channel, enhancing its on-air content management.</p> <p>One of its primary functions was managing and displaying daily weather reports. Data entry personnel used the application to update weather details, which were then formatted into graphics for on-air presentation, similar to </p> <p> <iframe  src='https://www.youtube.com/embed/CuYGW4OU7lU' title='Weather Forecast on Orad Graphics'  frameborder='0' allowfullscreen></iframe></p> <p>Additionally, the application included interactive modules for live game show broadcasts, where questions and answers were dynamically displayed on the screen—akin to popular formats like Who Wants to Be a Millionaire?</p> <p>This solution provided a cost-effective and efficient way to manage on-air content, significantly enhancing broadcast quality and interactivity during my tenure at the channel.</p>",
+    "HasLink": false,
+    "Link": ""
+  },
+  {
+    "Project Name": "Important Professional Projects",
+    "ProjectType": "Professional",
+    "Dates": "2013-2025",
+    "Description": "<p><b>CIB Finance 2013-16</b><ul><li>CIB-Pay</li><li>Startbooking.com</li><li>CIB-Translate</li><li>Payment Fraud Profiler</li><li>Sharaf Electro Store</li></ul></p><p><b>Fly Dubai 2016-17</b><ul><li>FFP (Frequent flyer program)</li><li>Cybersource Ready Queue</li><li>Fraud Detect</li><li>Booking  API - Connect point</li><li>Group booking optimisation in oracle</li><li>e.t.c.</li></ul></p><p><b>Edge Learning Solutions 2018-2020</b><ul><li>Edge SMS (Student management system)</li><li>Edge LM (Library management system)</li></ul></p><p><b>eStar Online 2020-2022</b><ul><li>iSAMS</li><li>RM Profiler DFP (Device finger print)</li><li>Test automation</li></ul></p><p><b>Provoke Solutions 2022-23</b><ul><li>Incident Reporting system (Fire and emergency New Zealand)</li><li>POC DB Migration for (Fire and emergency New Zealand)</li><li>e.t.c</li></ul></p>",    
+    "HasLink": false,
+    "Link": "#"
+  }
 ]
