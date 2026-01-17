@@ -296,8 +296,9 @@ h3 {
     transition: background-color 0.2s ease;
 }
 
-.table tbody tr:hover {
-    background-color: #2d3748;
+.table tbody tr:hover,
+.table-hover tbody tr:hover {
+    background-color: #2d3748 !important;
 }
 
 .table td {
