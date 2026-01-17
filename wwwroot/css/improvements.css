@@ -298,7 +298,12 @@ h3 {
 
 .table tbody tr:hover,
 .table-hover tbody tr:hover {
-    background-color: #2d3748 !important;
+    background-color: #1a202c !important;
+}
+
+.table tbody tr:hover td,
+.table-hover tbody tr:hover td {
+    color: #f0f0f0 !important;
 }
 
 .table td {
