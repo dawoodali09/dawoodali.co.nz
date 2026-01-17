@@ -431,3 +431,17 @@ img {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
+
+/* Mobile container text color fix for dark theme */
+.mobile-container h1,
+.mobile-container h2,
+.mobile-container h3,
+.mobile-container p {
+    color: #f0f0f0 !important;
+}
+
+/* Navbar brand and header text */
+.navbar-default .navbar-brand,
+.navbar-header a {
+    color: #f0f0f0 !important;
+}
