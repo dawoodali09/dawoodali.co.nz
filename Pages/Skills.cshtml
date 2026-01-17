@@ -1,234 +1,367 @@
-﻿@page
+@page
 @model dawoodali.co.nz.Pages.SkillsModel
-@{
-}
 @{
     ViewBag.Title = "Skills & Expertise";
 }
 
 <div id="page-wrapper">
     <div id="page-inner">
- 
-            <div class="col-md-12">
+        <!-- Header Section -->
+        <div class="row">
+            <div class="col-12">
                 <h1 class="page-head-line">Skills & Expertise</h1>
-                <h1 class="page-subhead-line">
-                    “ Bridging Technology and Business with Strategic Leadership & Innovation.”
-                </h1>
-            </div>
- 
-
-
-         <!-- Accordion for Skills Sections -->
-    <div class="accordion" id="skillsAccordion">
-
-        <!-- Business & Leadership Skills -->
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#businessSkills">
-                    <i class="fa fa-briefcase me-2"></i> Business & Leadership Skills
-                </button>
-            </h2>
-            <div id="businessSkills" class="accordion-collapse collapse show" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    <ul>
-                            <li><b>Strategic Planning:</b> Strong ability to analyze strategic opportunities, assess competitive advantage, and develop balanced strategic goals using key frameworks in strategic management.</li>
-                            <li><b>Strategy Implementation:</b> Strong ability to craft and execute strategies, integrating cross-functional insights to drive business success through effective strategic planning and implementation.</li>
-                            <li><b>Organisational Leadership:</b> "Strong foundation in senior management & leadership competencies, guided by Intelligent Career Theory. expertise in decision-making, leadership styles, and strategic thinking, with a focus on responsible and effective leadership.</li>
-                            <li><b>Operational Excellence:</b> Strong understanding of operational excellence principles, with the ability to apply process improvement techniques, evidence-based decision-making, and strategic operations management for world-class performance.</li>
-                            <li><b>Economics:</b> Strong grasp of economic principles, with the ability to analyze markets, decision-making, and resource allocation through an economic lens.</li>
-                            <li><b>Business Laws:</b> Strong understanding of business law, with the ability to interpret legal statutes, analyze cases, and navigate compliance requirements in a business context.</li>
-                            <li><b>Marketing:</b> Strong understanding of marketing principles, with expertise in consumer, business, service, and international markets, as well as strategic marketing management.</li>                            
-                            <li><b>Human Resource Management:</b> Strong understanding of strategic and transformational HR practices, with expertise in people management, organizational learning, change facilitation, and workforce innovation.</li>
-                    </ul>
-                </div>
+                <p class="lead text-center mb-4" style="font-style: italic; color: #555;">
+                    "Bridging Technology and Business with Strategic Leadership & Innovation"
+                </p>
             </div>
         </div>
 
-        <!-- Finance & Business Knowledge -->
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#financeSkills">
-                    <i class="fa fa-chart-line me-2"></i> Finance & Business
-                </button>
-            </h2>
-            <div id="financeSkills" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    <ul>
-                            <li><b>Accounting:</b> Strong understanding of accounting principles, financial reporting, and managerial decision-making to optimize financial performance.</li>
-                            <li><b>Finance:</b> Strong understanding of corporate finance, valuation techniques, capital markets, and financial risk management, with expertise in NPV, IRR, and capital structure decisions.</li>
-                            <li><b>International Business:</b> Strong understanding of globalization, international trade, and foreign investment, with the ability to analyze economic linkages, assess global market risks, and develop international business strategies.</li>
-                            <li><b>Sustainable Enterprises:</b> Strong understanding of sustainability and ESG performance, with the ability to evaluate reporting frameworks, assess sustainability strategies, and drive responsible enterprise practices.</li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- Technical Skills -->
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#technicalSkills">
-                    <i class="fa fa-code me-2"></i> Technical Skills
-                </button>
-            </h2>
-            <div id="technicalSkills" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><b>Software Development:</b> Extensive experience in the full software development lifecycle, from requirements gathering to deployment and maintenance. Proficient in building web, API, and mobile applications using modern frameworks and technologies such as Microsoft .NET Core, Java, and JavaScript-based platforms.</li>
-
-                            <li><b>Cloud Computing:</b> Hands-on experience with cloud platforms like Azure and AWS for hosting applications, setting up scalable infrastructure, and orchestrating production environments. Proficient in implementing monitoring, automation, and security best practices in cloud environments.</li>
-
-                            <li><b>Database Management:</b> Strong expertise in managing and optimizing relational databases such as MS SQL Server, Oracle, and MySQL. Well-versed in NoSQL databases including MongoDB, Couchbase, and Redis for scalable and high-performance data storage solutions.</li>
-
-                            <li><b>Project Management:</b> Proven ability to manage projects of varying scales using Agile methodologies, particularly Scrum. Skilled in using project management tools like JIRA and Azure DevOps to track progress, manage sprints, and ensure timely delivery.</li>
-
-                            <li><b>Proof of Concepts (PoC):</b> Adept at executing PoC projects to evaluate emerging technologies, test new concepts, and provide data-driven insights for strategic decision-making.</li>
-
-                            <li><b>Technology-Related BAU Operations:</b> Strong track record in handling business-as-usual (BAU) operations across various technology stacks. Experienced in implementing operational excellence techniques to optimize performance, security, and reliability of IT services.</li>
-
-                            <li><b>Computer Networking & Security:</b> Solid understanding of networking principles, including DNS configuration, mail server setup, and network security best practices. Well-versed in application security approaches to safeguard against cyber threats.</li>
-
-                            <li><b>Data Analysis & ETL Processes:</b> Strong analytical skills with experience in Extract, Transform, Load (ETL) processes for organizing and processing large datasets. Proficient in using data visualization and reporting tools to derive actionable insights.</li>
-
-                            <li><b>Data Integrations:</b> Expertise in real-time and batch data integration strategies, utilizing APIs, message queues, and ETL tools to streamline data flow between enterprise systems.</li>
-
-                            <li><b>Digital Tools & Productivity Software:</b> Proficient in a wide range of digital tools including Microsoft Office Suite (Excel, Word, PowerPoint), version control systems (Git, SourceTree, SVN), design tools (Canva, Adobe Creative Suite), and various automation utilities.</li>
-
-                            <li><b>AI & Automation Tools:</b> Strong knowledge of leveraging AI-powered tools like ChatGPT, Claude, Perplexity, and Copilot to enhance productivity, automate tasks, and improve decision-making processes.</li>
-                        </ul>
+        <!-- Skills Categories in Cards -->
+        <div class="row mb-4">
+            <!-- Business & Leadership -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                        <h3 class="mb-0"><i class="fa fa-briefcase me-2"></i> Business & Leadership</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="well well-lg">
-                                        <h4><b>Technologies</b></h4>
-                                        <ul>
-                                            <li>ASP.NET Core, MVC Framework, WCF, WPF, Web API</li>
-                                            <li>HTML5, CSS3, XML, JavaScript, jQuery, AJAX, Photoshop, Angular, React</li>
-                                            <li>XAML, XSL, Web Services, SOAP, REST APIs, Web 2.0, SAML</li>
-                                            <li>JSP, Java Servlets, Java Applets, Angular</li>
-                                            <li>Hands-on experience with Azure and AWS cloud services</li>
-                                            <li>Workday - Integrations, Splunk, Kafka, Entra (Azure AD)</li>
-                                            <li>Final cut pro, iMovie, Davinci Resolve</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="well well-lg">
-                                        <h4><b>Databases / Reporting Tools</b></h4>
-                                        <ul>
-                                            <li>MS SQL Server (strong command of T-SQL) and MS Access</li>
-                                            <li>Oracle and MySQL with Entity Framework</li>
-                                            <li>Crystal Reports, SSRS, and Oracle Reports</li>
-                                            <li>MongoDB, DynamoDB, and Azure Cosmos DB</li>
-                                            <li>Couchbase and Redis</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="well well-lg">
-                                        <h4><b>Languages / IDEs</b></h4>
-                                        <ul>
-                                            <li>Visual Studio, VS Code, C#, VB.NET, C++, JavaScript, TypeScript</li>
-                                            <li>Java Enterprise Edition and Mobile Edition</li>
-                                            <li>Eclipse, IntelliJ, Sublime, Xcode, NetBeans, and Android Studio</li>
-                                            <li>Workday Studio</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="panel-body">
-                                    <div class="panel-group" id="accordion">
-
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><b>MAJOR EXPERTISE</b></a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse in">
-                                                <div class="panel-body">
-                                                    <ul>
-                                                        <li>Solution architecture design and leading development initiatives</li>
-                                                        <li>Data and system integrations</li>
-                                                        <li>Identity and Access Management  </li>
-                                                        <li>Continuous integration and release management in Agile environments</li>
-                                                        <li>Requirement analysis and solution design for complex business problems</li>
-                                                        <li>Test automation for software quality assurance</li>
-                                                        <li>Resource and team management</li>
-                                                        <li>Web-based applications and website development</li>
-                                                        <li>Data mining, machine learning, and classification</li>
-                                                        <li>Online payment gateway development and fraud prevention techniques</li>
-                                                        <li>End-to-end software development life cycle (SDLC) management</li>
-                                                        <li>Database design, implementation, and administration</li>
-                                                        <li>Desktop, mobile, and embedded software development</li>
-                                                        <li>Real-time data streaming and high-performance applications</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                   
-
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h4 class="panel-title">
-                                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><b>DOMAIN KNOWLEDGE</b></a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseThree" class="panel-collapse collapse">
-                                                <div class="panel-body">
-                                                    <ul>
-                                                        <li>Student management systems</li>
-                                                        <li>Airline and aviation industry solutions</li>
-                                                        <li>Online hotel reservation systems (GDS)</li>
-                                                        <li>Media and broadcasting technologies</li>
-                                                        <li>Online payment services and e-banking solutions</li>
-                                                        <li>Cloud computing and distributed systems</li>
-                                                        <li>E-commerce and online trading platforms</li>
-                                                        <li>Project planning and project management methodologies</li>
-                                                        <li>Fitness and wellness industry applications</li>
-                                                        <li>Finance, investment, and risk management technologies</li>
-                                                        <li>Blockchain & Open Banking, </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
+                    <div class="card-body">
+                        <div class="skill-item">
+                            <h5 class="text-primary">Strategic Planning</h5>
+                            <p>Analyze strategic opportunities, assess competitive advantage, and develop balanced strategic goals using key frameworks in strategic management.</p>
                         </div>
-
+                        <div class="skill-item">
+                            <h5 class="text-primary">Strategy Implementation</h5>
+                            <p>Craft and execute strategies, integrating cross-functional insights to drive business success through effective strategic planning.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h5 class="text-primary">Organisational Leadership</h5>
+                            <p>Senior management & leadership competencies, guided by Intelligent Career Theory. Expertise in decision-making, leadership styles, and strategic thinking.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h5 class="text-primary">Operational Excellence</h5>
+                            <p>Apply process improvement techniques, evidence-based decision-making, and strategic operations management for world-class performance.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h5 class="text-primary">Marketing & HR Management</h5>
+                            <p>Expertise in marketing principles, strategic HR practices, people management, organizational learning, and workforce innovation.</p>
+                        </div>
                     </div>
-                </div>                  
+                </div>
             </div>
-       
+
+            <!-- Finance & Business -->
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                        <h3 class="mb-0"><i class="fa fa-chart-line me-2"></i> Finance & Business</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="skill-item">
+                            <h5 class="text-primary">Accounting & Finance</h5>
+                            <p>Strong understanding of accounting principles, corporate finance, valuation techniques, capital markets, and financial risk management (NPV, IRR, capital structure).</p>
+                        </div>
+                        <div class="skill-item">
+                            <h5 class="text-primary">International Business</h5>
+                            <p>Understanding of globalization, international trade, and foreign investment. Analyze economic linkages, assess global market risks, and develop international strategies.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h5 class="text-primary">Sustainable Enterprises</h5>
+                            <p>Understanding of sustainability and ESG performance. Evaluate reporting frameworks, assess sustainability strategies, and drive responsible enterprise practices.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h5 class="text-primary">Economics & Business Law</h5>
+                            <p>Economic principles, market analysis, resource allocation, legal statutes interpretation, and business compliance requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card hover-lift">
+                    <div class="card-header" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                        <h3 class="mb-0"><i class="fa fa-code me-2"></i> Technical Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="skill-item">
+                                    <h5 class="text-primary">Software Development</h5>
+                                    <p>Full SDLC experience - requirements to deployment. Proficient in web, API, and mobile applications using .NET Core, Java, and JavaScript platforms.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="skill-item">
+                                    <h5 class="text-primary">Cloud Computing</h5>
+                                    <p>Hands-on with Azure and AWS for scalable infrastructure, orchestration, monitoring, automation, and security best practices.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="skill-item">
+                                    <h5 class="text-primary">Database Management</h5>
+                                    <p>Expertise in MS SQL Server, Oracle, MySQL, MongoDB, Couchbase, and Redis for scalable, high-performance data storage.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="skill-item">
+                                    <h5 class="text-primary">Project Management</h5>
+                                    <p>Agile methodologies (Scrum), JIRA, Azure DevOps for tracking progress, managing sprints, and ensuring timely delivery.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="skill-item">
+                                    <h5 class="text-primary">Data Analysis & ETL</h5>
+                                    <p>Strong analytical skills with ETL processes for large datasets. Data visualization and reporting tools for actionable insights.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="skill-item">
+                                    <h5 class="text-primary">AI & Automation</h5>
+                                    <p>Leveraging ChatGPT, Claude, Perplexity, and Copilot to enhance productivity, automate tasks, and improve decision-making.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="row mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0"><i class="fa fa-laptop-code me-2"></i> Technologies</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> ASP.NET Core, MVC, WCF, WPF, Web API</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> HTML5, CSS3, JavaScript, jQuery, React, Angular</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> REST APIs, Web Services, SOAP, SAML</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Azure & AWS Cloud Services</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Workday, Splunk, Kafka, Entra ID</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Final Cut Pro, DaVinci Resolve</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header bg-success text-white">
+                        <h4 class="mb-0"><i class="fa fa-database me-2"></i> Databases & Reporting</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> MS SQL Server (T-SQL), MS Access</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Oracle, MySQL with Entity Framework</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Crystal Reports, SSRS, Oracle Reports</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> MongoDB, DynamoDB, Azure Cosmos DB</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Couchbase, Redis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header bg-info text-white">
+                        <h4 class="mb-0"><i class="fa fa-terminal me-2"></i> Languages & IDEs</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> C#, VB.NET, C++, Java (EE & ME)</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> JavaScript, TypeScript</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Visual Studio, VS Code</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Eclipse, IntelliJ, Android Studio</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Xcode, NetBeans, Sublime</li>
+                            <li class="mb-2"><i class="fa fa-check-circle text-success me-2"></i> Workday Studio</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Major Expertise & Domain Knowledge -->
+        <div class="row mb-4">
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white;">
+                        <h4 class="mb-0"><i class="fa fa-star me-2"></i> Major Expertise</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Solution architecture design & development leadership</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Data and system integrations</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Identity and Access Management</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> CI/CD in Agile environments</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Requirement analysis & solution design</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Test automation & quality assurance</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Resource and team management</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> End-to-end SDLC management</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-warning me-2"></i> Real-time data streaming applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card hover-lift h-100">
+                    <div class="card-header" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333;">
+                        <h4 class="mb-0"><i class="fa fa-industry me-2"></i> Domain Knowledge</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Student management systems</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Airline and aviation industry</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Online hotel reservation (GDS)</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Media & broadcasting technologies</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Online payment & e-banking</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Cloud computing & distributed systems</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> E-commerce & online trading</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Finance, investment & risk management</li>
+                            <li class="mb-2"><i class="fa fa-arrow-right text-info me-2"></i> Blockchain & Open Banking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Soft Skills -->
-        <div class="accordion-item">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#softSkills">
-                    <i class="fa fa-users me-2"></i> Soft Skills
-                </button>
-            </h2>
-            <div id="softSkills" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                <div class="accordion-body">
-                    <ul>
-                        <li>Excellent communication & negotiation skills.</li>
-                        <li>Leadership, teamwork, and conflict resolution.</li>
-                        <li>Critical thinking & problem-solving abilities.</li>                
-                        <li>Professional attitude with the ability to meet tight deadlines</li>                      
-                        <li>Ability to work under pressure while ensuring high-quality outcomes</li>
-                    </ul>
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card hover-lift">
+                    <div class="card-header" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333;">
+                        <h3 class="mb-0"><i class="fa fa-users me-2"></i> Soft Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3 text-center">
+                                <div class="soft-skill-badge">
+                                    <i class="fa fa-comments fa-3x text-primary mb-3"></i>
+                                    <h5>Communication & Negotiation</h5>
+                                    <p>Excellent communication and negotiation skills</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 text-center">
+                                <div class="soft-skill-badge">
+                                    <i class="fa fa-users-cog fa-3x text-success mb-3"></i>
+                                    <h5>Leadership & Teamwork</h5>
+                                    <p>Leadership, teamwork, and conflict resolution</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 text-center">
+                                <div class="soft-skill-badge">
+                                    <i class="fa fa-brain fa-3x text-warning mb-3"></i>
+                                    <h5>Critical Thinking</h5>
+                                    <p>Problem-solving and analytical abilities</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 text-center">
+                                <div class="soft-skill-badge">
+                                    <i class="fa fa-clock fa-3x text-danger mb-3"></i>
+                                    <h5>Time Management</h5>
+                                    <p>Meet tight deadlines with professional attitude</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3 text-center">
+                                <div class="soft-skill-badge">
+                                    <i class="fa fa-chart-line fa-3x text-info mb-3"></i>
+                                    <h5>Quality Under Pressure</h5>
+                                    <p>High-quality outcomes while working under pressure</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    .skill-item {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e1e8ed;
+    }
+
+    .skill-item:last-child {
+        border-bottom: none;
+    }
+
+    .skill-item h5 {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .skill-item p {
+        color: #555;
+        margin-bottom: 0;
+        line-height: 1.6;
+    }
+
+    .soft-skill-badge {
+        padding: 20px;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+    }
+
+    .soft-skill-badge:hover {
+        background-color: #f8f9fa;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .soft-skill-badge h5 {
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .soft-skill-badge p {
+        color: #666;
+        font-size: 14px;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+        .card-header h3, .card-header h4 {
+            font-size: 18px;
+        }
+
+        .skill-item h5 {
+            font-size: 16px;
+        }
+
+        .soft-skill-badge i {
+            font-size: 2rem !important;
+        }
+
+        .lead {
+            font-size: 16px;
+        }
+    }
+
+    /* Card header improvements */
+    .card-header {
+        padding: 15px 20px;
+        border-radius: 8px 8px 0 0 !important;
+    }
+
+    .card-header h3, .card-header h4 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /* List styling */
+    .list-unstyled li {
+        padding: 5px 0;
+        font-size: 15px;
+    }
+
+    .list-unstyled i.fa-check-circle {
+        font-size: 16px;
+    }
+</style>
