@@ -1,76 +1,63 @@
-# CLAUDE.MD
+# CLAUDE.md
 
-## Project Overview
-This is a personal portfolio website for dawoodali.co.nz built with ASP.NET Core 8.0 and Razor Pages.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Tech Stack
-- **Framework**: ASP.NET Core 8.0
-- **UI**: Razor Pages
-- **Language**: C#
-- **Container**: Docker (Linux-based)
-- **Dependencies**:
-  - Newtonsoft.Json 13.0.3
-  - Microsoft.VisualStudio.Azure.Containers.Tools.Targets 1.21.0
+## Build and Run Commands
 
-## Project Structure
-```
-.
-├── Pages/              # Razor Pages (About, Blogs, Contact, Education, etc.)
-├── wwwroot/           # Static files (CSS, JS, images)
-├── Properties/        # Project properties
-├── .config/           # Configuration files
-├── Program.cs         # Application entry point
-├── Dockerfile         # Container configuration
-└── appsettings.json   # Application settings
-```
-
-## Development
-
-### Prerequisites
-- .NET 8.0 SDK
-- Docker (optional, for containerized deployment)
-
-### Running Locally
 ```bash
+# Run locally (hot reload enabled in development)
 dotnet run
-```
 
-### Building
-```bash
+# Build only
 dotnet build
-```
 
-### Docker
-```bash
+# Docker build and run
 docker build -t dawoodali-website .
 docker run -p 8080:80 dawoodali-website
 ```
 
-## Configuration
-- Development settings: `appsettings.Development.json`
-- Production settings: `appsettings.json`
-- User secrets ID: `18587587-d504-4c58-a2e8-2d770df8b5a8`
+## Architecture Overview
 
-## Key Features
-- HTTPS redirection (disabled in development)
-- Static file serving
-- HSTS (HTTP Strict Transport Security) in production
-- Exception handling with error page
+This is a static portfolio website built with ASP.NET Core 8.0 Razor Pages. There is no database - all content is hardcoded in the Razor views.
 
-## Working with Claude
-When working on this project with Claude Code:
+### Page Structure
 
-### Common Tasks
-- **Adding new pages**: Create `.cshtml` and `.cshtml.cs` files in `Pages/` directory
-- **Styling**: Add/modify CSS in `wwwroot/css/`
-- **Static assets**: Place in `wwwroot/` directory
-- **Configuration**: Update `appsettings.json` for app-wide settings
+**Root-level pages** (`Pages/*.cshtml`) are the main site pages:
+- `Index.cshtml` - Homepage with video background (desktop) and static content (mobile)
+- `About.cshtml`, `WorkHistory.cshtml`, `Education.cshtml`, `Skills.cshtml` - Portfolio sections
+- `Contact.cshtml` - Contact form with reCAPTCHA
+- `_Layout.cshtml` in `Pages/Shared/` - Master layout with navbar, sidebar menu, and footer
 
-### Branch Information
-- Main branch: `main`
-- Current worktree: `agitated-montalcini`
+**Home subdirectory** (`Pages/Home/*.cshtml`) contains older/alternative versions of pages - the root-level pages are the active ones.
 
-### Notes
-- Project uses nullable reference types
-- Implicit usings are enabled
-- Docker target OS is Linux
+### Styling Architecture
+
+CSS files in `wwwroot/css/`:
+- `bootstrap.css` - Bootstrap 3 framework
+- `basic.css` - Base layout styles (sidebar, navbar, page wrapper)
+- `custom.css` - Primary custom styles for all pages
+- `improvements.css` - Recent style fixes and enhancements
+- `font-awesome2.min.css` - Font Awesome 5.15.3 icons
+
+The site uses Font Awesome 5 classes (`fas`, `fab`, `far`) for icons. Do not mix with Font Awesome 4 syntax.
+
+### Layout System
+
+The layout uses a fixed sidebar navigation pattern:
+- `#wrapper` - Main container
+- `.navbar-cls-top` - Top header bar (hidden on mobile)
+- `.navbar-side` - Left sidebar with navigation links
+- `#page-wrapper` > `#page-inner` - Main content area
+- `#footer-sec` - Fixed footer
+
+Pages set their title via `ViewBag.Title` which displays in the sidebar caption.
+
+### Static Assets
+
+- `wwwroot/assets/img/` - Images (logos, profile photos)
+- `wwwroot/assets/Files/` - Downloadable files (PDF resume, documents)
+- `wwwroot/assets/js/` - JavaScript libraries (jQuery, Bootstrap, metisMenu)
+
+### Performance Features
+
+The app uses memory caching, response compression, output caching, and 7-day static file caching (configured in `Program.cs`).
