@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model dawoodali.co.nz.Pages.WorkHistoryModel
 @{
 }
@@ -13,158 +13,266 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-head-line">Career History</h1>
-                <h1 class="page-subhead-line">“Unending journey is indeed a journey worthwhile ”  </h1>
+                <h2 class="page-subhead-line" style="font-size: 1.3rem; color: #b8b8b8; font-style: italic; margin-bottom: 40px;">"Unending journey is indeed a journey worthwhile"</h2>
             </div>
         </div>
-        <!-- /. ROW  -->
+
+        <!-- Timeline Container -->
         <div class="row">
             <div class="col-md-12">
-                <table class="table table-hover table-responsive-md" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Employer</th>
-                            <th>Dates</th>
-                            <th>Designation</th>
-                          
-                        </tr>
-                    </thead>
-                    <tbody class="embed-responsive-item">
-                        <tr>
-                            <td>1</td>
-                            <td>
-                                <img src="~/assets/img/westpacLogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                Westpac New Zealand (Christchurch / Auckland) NZ
-                            </td>
-                            <td>January 2023 -- Till Date</td>
-                            <td>Inegration Engineer (HR Services)
-                                &nbsp;
-                                <a href="#" style="color:blue;" data-toggle="modal" data-target="#modelwnzl">Read more</a>
-                            </td>
-                    
-                        </tr>
+                <div class="timeline">
 
+                    <!-- Position 1: Westpac -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/westpacLogo.png" class="company-logo" alt="Westpac" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">Westpac New Zealand</h3>
+                                        <p class="location">Christchurch / Auckland, NZ</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> January 2023 - Present
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Integration Systems Engineer (HR Services)</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelwnzl">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>2</td>
-                            <td>
-                                <img src="~/assets/img/provokeLogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                Provoke Solutions (Christchurch NZ)
-                            </td>
-                            <td>January 2022 -- January 2023</td>
-                            <td>
-                                Senior Software Engineer &nbsp;
-                                    <a href="#" style="color:blue;"data-toggle="modal" data-target="#modelProvoke">Read more</a>
-                            </td>
-                        
-                        </tr>
+                    <!-- Position 2: Provoke Solutions -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/provokeLogo.png" class="company-logo" alt="Provoke Solutions" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">Provoke Solutions</h3>
+                                        <p class="location">Christchurch, NZ</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> January 2022 - January 2023
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Senior Software Engineer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelProvoke">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>3</td>
-                            <td>
-                                <img src="~/assets/img/estarLogo.PNG" class="img-thumbnail" height="30px" width="50px" />
-                                eStar Online Ltd (Christchurch NZ)
-                            </td>
-                            <td>December 2020 -- January 2022</td>
-                            <td>
-                                Senior Software Developer&nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelestar">Read more</a>
-                            </td>
-                     
-                        </tr>
+                    <!-- Position 3: eStar Online -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/estarLogo.PNG" class="company-logo" alt="eStar Online" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">eStar Online Ltd</h3>
+                                        <p class="location">Christchurch, NZ</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> December 2020 - January 2022
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Senior Software Developer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelestar">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>4</td>
-                            <td>
-                                <img src="~/assets/img/edgeLogo.jpg" class="img-thumbnail" height="30px" width="50px" />
-                                Edge Learning (MUSAC Ltd) Palmerston North NZ
-                            </td>
-                            <td>January 2018 -- November 2020</td>
-                            <td>
-                                Lead Software Developer &nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modeledge">Read more</a>
-                            </td>
-                        
-                        </tr>
+                    <!-- Position 4: Edge Learning -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/edgeLogo.jpg" class="company-logo" alt="Edge Learning" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">Edge Learning (MUSAC Ltd)</h3>
+                                        <p class="location">Palmerston North, NZ</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> January 2018 - November 2020
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Lead Software Developer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modeledge">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>5</td>
-                            <td>
-                                <img src="~/assets/img/fzlogo.jpg" class="img-thumbnail" height="30px" width="50px" />
-                                fly Dubai (Dubai aviation corporation) Dubai UAE
-                            </td>
-                            <td>May 2016 -- December 2017</td>
-                            <td>
-                                Software Developer / Architect&nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelfz">Read more</a>
-                            </td>
-                         
-                        </tr>
+                    <!-- Position 5: fly Dubai -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/fzlogo.jpg" class="company-logo" alt="fly Dubai" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">fly Dubai</h3>
+                                        <p class="location">Dubai, UAE</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> May 2016 - December 2017
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Software Developer / Architect</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelfz">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Position 6: CIB Finance -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/ciblogo.png" class="company-logo" alt="CIB Finance" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">CIB Finance</h3>
+                                        <p class="location">Dubai, UAE</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> July 2013 - May 2016
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Technical Lead / Software Developer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelcib">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>6</td>
-                            <td>
-                                <img src="~/assets/img/ciblogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                CIB Finance Dubai UAE
-                            </td>
-                            <td>July 2013 -- May 2016</td>
-                            <td>
-                                Technical Lead / Software Developer&nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelcib">Read more</a>
-                            </td>
-                     
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>
-                                <img src="~/assets/img/cmnetworklogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                Point Pay (CM Network) Danish based firm in UAE
-                            </td>
-                            <td>March 2012 -- May 2013</td>
-                            <td>
-                                Senior Software Developer &nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelcmnetwork">Read more</a>
-                            </td>
-                      
-                        </tr>
+                    <!-- Position 7: Point Pay -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/cmnetworklogo.png" class="company-logo" alt="Point Pay" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">Point Pay (CM Network)</h3>
+                                        <p class="location">Dubai, UAE (Danish based)</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> March 2012 - May 2013
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Senior Software Developer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelcmnetwork">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>8</td>
-                            <td>
-                                <img src="~/assets/img/infinitytvlogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                Infinity TV FZ LLC Dubai UAE
-                            </td>
-                            <td>January 2009 -- March 2012</td>
-                            <td>
-                                Computer / Web programmer&nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelinfinity">Read more</a>
-                            </td>
-                         
-                        </tr>
+                    <!-- Position 8: Infinity TV -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/infinitytvlogo.png" class="company-logo" alt="Infinity TV" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">Infinity TV FZ LLC</h3>
+                                        <p class="location">Dubai, UAE</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> January 2009 - March 2012
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Computer / Web Programmer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelinfinity">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td>9</td>
-                            <td>
-                                <img src="~/assets/img/experteklogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                Expertek Cyber Solutions USA based in KHI Pakistan
-                            </td>
-                            <td>January 2008 -- December 2008</td>
-                            <td>
-                                Web Developer &nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelexpertek">Read more</a>
-                            </td>
-                      
-                        </tr>
+                    <!-- Position 9: Expertek -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/experteklogo.png" class="company-logo" alt="Expertek" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">Expertek Cyber Solutions</h3>
+                                        <p class="location">Karachi, Pakistan (USA based)</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> January 2008 - December 2008
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Web Developer</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelexpertek">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Position 10: CRUC FAST -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-header">
+                                    <img src="~/assets/img/fastlogo.png" class="company-logo" alt="FAST" />
+                                    <div class="timeline-info">
+                                        <h3 class="company-name">CRUC FAST</h3>
+                                        <p class="location">Microsoft Innovation Centre</p>
+                                    </div>
+                                    <div class="timeline-date">
+                                        <i class="fa fa-calendar"></i> June 2007 - August 2007
+                                    </div>
+                                </div>
+                                <div class="timeline-body">
+                                    <h4 class="position-title">Internee</h4>
+                                    <a href="#" class="btn btn-sm btn-primary read-more-btn" data-toggle="modal" data-target="#modelcruc">
+                                        <i class="fa fa-info-circle"></i> Read More
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-                        <tr>
-                            <td>10</td>
-                            <td>
-                                <img src="~/assets/img/fastlogo.png" class="img-thumbnail" height="30px" width="50px" />
-                                CRUC FAST (Microsoft Innovation Centre)
-                            </td>
-                            <td>June 2007 -- August 2007</td>
-                            <td>
-                                Internee &nbsp;<a href="#" style="color:blue;"data-toggle="modal" data-target="#modelcruc">Read more</a>
-                            </td>                        
-                        </tr>
-                    </tbody>
-                </table>
+                </div>
             </div>
         </div>
 
@@ -174,26 +282,25 @@
 <!-- /. PAGE WRAPPER  -->
 
 
+<!-- Modal Dialogs -->
 
 <div class="modal fade" id="modelwnzl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
-                <h4 class="modal-title" id="myModalLabel">Role at Westpac New Zealand Involved</h4>
+                <h4 class="modal-title" id="myModalLabel">Role at Westpac New Zealand</h4>
             </div>
             <div class="modal-body small">
-                <p>                   
-                    <ul>
-                        <li>Managing and supporting hundreds of Data integration across human resource domain.</li>
-                        <li> Development of various data integrations using Workday HCM using different approaches.</li>
-                        <li> Played a critical role in adaptation and implementation of Workday HCM across organization.</li>
-                        <li> Providing state-of-the-art support for maintaining a data exchange ecosystem in strict adherence to high-compliance banking guidelines.</li>
-                        <li> Providing valuable guidelines, and assistance in various new developments and project initiatives.</li>
-                        <li> Bridging the gaps across various business units and external service providers.</li>
-                        <li> Utilizing Operational excellence skills in optimizing the process and practices with in our squad.</li>
-                    </ul>
-                </p>                                                                                                                                                
+                <ul>
+                    <li>Managing and supporting hundreds of Data integration across human resource domain.</li>
+                    <li>Development of various data integrations using Workday HCM using different approaches.</li>
+                    <li>Played a critical role in adaptation and implementation of Workday HCM across organization.</li>
+                    <li>Providing state-of-the-art support for maintaining a data exchange ecosystem in strict adherence to high-compliance banking guidelines.</li>
+                    <li>Providing valuable guidelines, and assistance in various new developments and project initiatives.</li>
+                    <li>Bridging the gaps across various business units and external service providers.</li>
+                    <li>Utilizing Operational excellence skills in optimizing the process and practices with in our squad.</li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -201,44 +308,9 @@
         </div>
     </div>
 </div>
-
-
-
-<div class="modal fade" id="modeledge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
-                <h4 class="modal-title" id="myModalLabel">Work at Edge Learning Solutions (MUSAC)</h4>
-            </div>
-            <div class="modal-body small">
-                <p>
-                    MUSAC is a key provider of software-as-a-service solutions to the education sector in New Zealand and Internationally.
-                    Cutting to the heart of student achievement, MUSAC is re-imagining the future of Student Management Systems for principals, boards, teachers, caregivers and students.
-                </p>
-                <p>
-                    Working as lead software engineer for two main applications.
-                </p>
-                <p>
-                    worked on student management system as developer lead, analsying issues reported by clients and provide quick resolutions. also worked on user requirements and turning them into value addded features in the application.
-                </p>
-                <p>
-                    Apart from above plenty of things I have done various technical areas for e.g. Dev Ops tasks including release management performance tunning e.t.c.
-                </p>
-
-            </div>
-            <div class="modal-footer">
-                <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
 
 <div class="modal fade" id="modelProvoke" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
@@ -247,49 +319,26 @@
             <div class="modal-body small">
                 <p>
                     Provoke is a 20 year-old business and has been a Microsoft Gold Certified Partner during that time.
-
-                    From strategy, architecture, creative (UX and Design) through implementation and operations (managed services), we partner with clients to innovate, disrupt, and attain their BHAGs through digital solutions expressed as excellent software development.
-
-                    We build the software that helps our clients win through...
-
-                    * Modern Worker Experience
-                    - Helping clients migrate Sharepoint to the cloud
-                    - M365:  Strategy & Governance, Implement & Operationalize, & Managed Services
-                    - Enhanced capabilities to elevate the digital collaboration capabilities of M365
-
-                    * Azure Cloud Engineering
-                    - App Modernization
-                    - Custom Application Development & DevOps
-                    - Cloud Engineering & IaaS/Infrastructure as Code
-
-                    * Data/AI/ML
-                    - Data Preparation
-                    - AI/ML driven insights discover
-                    - Data & Insights Visualization
-                    - Automated Insights Realization (TM)
-
-                    We follow 3 principles in performing our work:
-
-                    (1) Take an experimentation, not a big-bet transformation approach.  Afterall, 73% of digital transformation efforts fail (Everest Group)
-
-                    (2) "Clean coding" - not just for technical excellence, but for environmental excellence to help reduce the carbon footprint produced by poorly engineered software
-
-                    (3) Don't just migrate, modernize.  Running old architectures on the cloud is leaving a great deal of technical, financial and environmental benefits on the table.
                 </p>
-
-
+                <p>
+                    From strategy, architecture, creative (UX and Design) through implementation and operations (managed services), we partner with clients to innovate, disrupt, and attain their BHAGs through digital solutions expressed as excellent software development.
+                </p>
+                <p>We build the software that helps our clients win through...</p>
+                <ul>
+                    <li><strong>Modern Worker Experience</strong> - Helping clients migrate Sharepoint to the cloud, M365 Strategy & Governance, Enhanced capabilities to elevate digital collaboration</li>
+                    <li><strong>Azure Cloud Engineering</strong> - App Modernization, Custom Application Development & DevOps, Cloud Engineering & IaaS/Infrastructure as Code</li>
+                    <li><strong>Data/AI/ML</strong> - Data Preparation, AI/ML driven insights discovery, Data & Insights Visualization, Automated Insights Realization</li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
             </div>
         </div>
     </div>
-
-
 </div>
 
 <div class="modal fade" id="modelestar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
@@ -297,21 +346,14 @@
             </div>
             <div class="modal-body small">
                 <p>
-                    eStar is a world class software as a service eCommerce solutions provider, delivered by a world class team. Please see below for more about our story, team, career opportunities and investor information.
-                    In 1998, eStar launched as an online retailer, using custom built software to sell more than five million music CDs. Leveraging this custom software eStar evolved into Australasia's first and largest eCommerce Software as a Service (SaaS) solutions provider.
-
+                    eStar is a world class software as a service eCommerce solutions provider, delivered by a world class team. In 1998, eStar launched as an online retailer, using custom built software to sell more than five million music CDs. Leveraging this custom software eStar evolved into Australasia's first and largest eCommerce Software as a Service (SaaS) solutions provider.
+                </p>
+                <p>
                     eStar's tier one clients include David Jones, Country Road Group, Air New Zealand, Briscoe Group, and successful brands such as Sacha Drake, Bed Bath & Beyond and many more.
                 </p>
                 <p>
-                    Working as senior software engineer.
+                    Working as senior software engineer developing new features based on user requirements, analysing the remedial issues and supplying the fixes, analysing the requirements and scoping the solutions.
                 </p>
-                <p>
-                    developing new features based on user requirements, analysing the remedial issues and supplying the fixes, analsing the requirements and scoping the solutions
-                </p>
-                <p>
-                    Apart from above plenty of things I have been doing day in and out in various technical areas.
-                </p>
-
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -320,13 +362,33 @@
     </div>
 </div>
 
-
-
-
-
+<div class="modal fade" id="modeledge" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
+                <h4 class="modal-title" id="myModalLabel">Work at Edge Learning Solutions (MUSAC)</h4>
+            </div>
+            <div class="modal-body small">
+                <p>
+                    MUSAC is a key provider of software-as-a-service solutions to the education sector in New Zealand and Internationally. Cutting to the heart of student achievement, MUSAC is re-imagining the future of Student Management Systems for principals, boards, teachers, caregivers and students.
+                </p>
+                <p>
+                    Working as lead software engineer for two main applications. Worked on student management system as developer lead, analysing issues reported by clients and providing quick resolutions. Also worked on user requirements and turning them into value added features in the application.
+                </p>
+                <p>
+                    Apart from above, did various technical tasks including DevOps, release management, performance tuning, etc.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal fade" id="modelfz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
@@ -334,29 +396,15 @@
             </div>
             <div class="modal-body small">
                 <p>
-                    flydubai, legally Dubai Aviation Corporation, is a government-owned low-cost airline with its head office and flight operations in Terminal 2 of Dubai International Airport.
-                    The airline operates a total of 95 destinations, serving the Middle East, Africa, Asia and Europe from Dubai.
+                    flydubai, legally Dubai Aviation Corporation, is a government-owned low-cost airline with its head office and flight operations in Terminal 2 of Dubai International Airport. The airline operates a total of 95 destinations, serving the Middle East, Africa, Asia and Europe from Dubai.
                 </p>
-                <p>
-                    worked as lead software developer on various payment related projects of the company to maximize
-                    the revenue and preventing the online fraud using my expertise and experiences
-                </p>
-                <p>
-                    Helping the company’s IT department in setting up their test automation along build / release
-                    automation for PSS projects
-                </p>
-                <p>
-                    Working as skilled resource to maintain and upgrade the existing PSS (passenger service system)
-                    API’s (Radixx Connect Point). Specifically handling the payment related areas
-                </p>
-                <p>
-                    Supervising and assisting various application developers at offshore vendor’s locations in getting
-                    various PSS projects done
-                </p>
-                <p>
-                    Worked as software engineer in a large team to develop airlines loyalty program called (Open
-                    Rewards)
-                </p>
+                <ul>
+                    <li>Worked as lead software developer on various payment related projects to maximize revenue and preventing online fraud</li>
+                    <li>Helped the company's IT department in setting up test automation along with build/release automation for PSS projects</li>
+                    <li>Worked as skilled resource to maintain and upgrade existing PSS (passenger service system) API's (Radixx Connect Point), specifically handling payment related areas</li>
+                    <li>Supervised and assisted various application developers at offshore vendor locations</li>
+                    <li>Worked as software engineer in a large team to develop airlines loyalty program called Open Rewards</li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -365,14 +413,8 @@
     </div>
 </div>
 
-
-
-
-
-
-
 <div class="modal fade" id="modelcib" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
@@ -380,66 +422,21 @@
             </div>
             <div class="modal-body small">
                 <p>
-                    CIB Finance having their one office in Dubai United Arab Emirates is
-                    Basically a finance related organization which is having business presence in various countries
-                    Including Turkey, Cyprus, France, Malaysia etc.
+                    CIB Finance having their office in Dubai United Arab Emirates is a finance related organization with business presence in various countries including Turkey, Cyprus, France, Malaysia etc.
                 </p>
                 <p>
-                    I have been working in this firm since 1st July 2013 until now as lead
-                    Software programmer / Technical Lead meeting the expectations of enterprise with flying
-                    Colors simply via utilizing my past experiences and the educational background.
-                    During past two years I have worked on variety of projects under the domains of payment
-                    Processing systems, hospitality industry, E-Commerce applications etc.
+                    Worked as lead Software programmer / Technical Lead. During this tenure, worked on variety of projects under the domains of payment processing systems, hospitality industry, E-Commerce applications etc.
                 </p>
                 <p>
-                    As reference two major accomplishments while working with CIB Finance includes,
-                    (CIB-PAY) Payment Gateway development which facilitate thousands of secure online credit
-                    Card transactions every day following the up to date PCI security compliance standards.
-                    - Online hotel reservation web application called www.startbooking.com which enables people
-                    To book their hotel stay anywhere at anytime from anywhere.
-                    During this tenure, I worked with higher degree of responsibility as compare to past by
-                    Managing small development / designing teams, managing Data Centers and servers making
-                    Sure their safe and responsive performance along with relevant technical communications
-                    With various business entities that are involved in respective perspective.
+                    Major accomplishments include:
                 </p>
+                <ul>
+                    <li><strong>CIB-PAY Payment Gateway</strong> - Developed payment gateway which facilitates thousands of secure online credit card transactions every day following PCI security compliance standards</li>
+                    <li><strong>www.startbooking.com</strong> - Online hotel reservation web application enabling people to book hotel stays anywhere at anytime</li>
+                </ul>
                 <p>
-                    In general my job involve effective communications with the team and other business entities
-                    In different countries mostly in Cyprus, Turkey, Switzerland & India, design and
-                    Implementation of efficient database architecture designing, and state of the art quality
-                    Web / software applications and maintenance of those software applications over the servers
-                    Where they are hosted.
+                    Managed small development/designing teams, managed Data Centers and servers ensuring safe and responsive performance along with relevant technical communications with various business entities in Cyprus, Turkey, Switzerland & India.
                 </p>
-            </div>
-            <div class="modal-footer">
-                <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="modal fade" id="modelinfinity" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
-                <h4 class="modal-title" id="myModalLabel">Work at Infinity TV FZ LLC</h4>
-            </div>
-            <div class="modal-body small">
-                <p>
-                    started career as a web programmer for the television channel and developed and mantain entire CMS web for the television channel
-                </p>
-                <p>
-                    later on worked on various applications / tools to support television transmission and on-air graphics.
-                    also worked on live streaming of television transmission over the web and mobile app.
-                </p>
-                <p>
-                    was acting as head of Online department at the time when I left the channel to persue my carrer in different organization.
-                </p>
-
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -449,19 +446,39 @@
 </div>
 
 <div class="modal fade" id="modelcmnetwork" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
-                <h4 class="modal-title" id="myModalLabel">Work at Point Pay FZ LLC (Cmnetwork)</h4>
+                <h4 class="modal-title" id="myModalLabel">Work at Point Pay FZ LLC (CM Network)</h4>
             </div>
             <div class="modal-body small">
-                <p>
-                    worked as senior .Net developer for the development of a dedicated payment gateway.
-                </p>
-                <p>
-                    developed various fraud prevention tools and worked on various other online apps to support the business.
-                </p>
+                <ul>
+                    <li>Worked as senior .NET developer for the development of a dedicated payment gateway</li>
+                    <li>Developed various fraud prevention tools and worked on various other online apps to support the business</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modelinfinity" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
+                <h4 class="modal-title" id="myModalLabel">Work at Infinity TV FZ LLC</h4>
+            </div>
+            <div class="modal-body small">
+                <ul>
+                    <li>Started career as a web programmer for the television channel and developed and maintained entire CMS web for the television channel</li>
+                    <li>Worked on various applications/tools to support television transmission and on-air graphics</li>
+                    <li>Worked on live streaming of television transmission over the web and mobile app</li>
+                    <li>Was acting as head of Online department at the time of leaving the channel</li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -471,20 +488,17 @@
 </div>
 
 <div class="modal fade" id="modelexpertek" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
                 <h4 class="modal-title" id="myModalLabel">Work at Expertek Cyber Solutions</h4>
             </div>
             <div class="modal-body small">
-                <p>
-                    Worked as a junior / intermediate developer.
-                </p>
-                <p>
-                    worked on various E-commerce asp.net based web applications.
-                </p>
-
+                <ul>
+                    <li>Worked as a junior/intermediate developer</li>
+                    <li>Worked on various E-commerce ASP.NET based web applications</li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -494,7 +508,7 @@
 </div>
 
 <div class="modal fade" id="modelcruc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <label type="label" class="close" data-dismiss="modal" aria-hidden="true">×</label>
@@ -502,10 +516,8 @@
             </div>
             <div class="modal-body small">
                 <p>
-                    Internship offered under Microsoft Innovation center where I worked with PHD fellows on the practical implementation of a proposed thesis.
-                    developed an Agent based system for profiling the users and monitoring threats.
+                    Internship offered under Microsoft Innovation center where I worked with PHD fellows on the practical implementation of a proposed thesis. Developed an Agent based system for profiling the users and monitoring threats.
                 </p>
-
             </div>
             <div class="modal-footer">
                 <label type="label" class="btn btn-danger" data-dismiss="modal">Close</label>
@@ -514,4 +526,213 @@
     </div>
 </div>
 
+<style>
+    /* Timeline Styles */
+    .timeline {
+        position: relative;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
 
+    /* Vertical line */
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, #3498db 0%, #2ecc71 100%);
+        border-radius: 2px;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 80px;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 24px;
+        height: 24px;
+        background: linear-gradient(135deg, #3498db 0%, #2ecc71 100%);
+        border: 4px solid #0f1419;
+        border-radius: 50%;
+        z-index: 1;
+        box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.3);
+    }
+
+    .timeline-content {
+        position: relative;
+    }
+
+    .timeline-card {
+        background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+        border: 1px solid #4a5568;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+    }
+
+    .timeline-card:hover {
+        transform: translateX(8px);
+        box-shadow: 0 8px 24px rgba(52, 152, 219, 0.3);
+        border-color: #3498db;
+    }
+
+    .timeline-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+    }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        border-radius: 8px;
+        border: 2px solid #4a5568;
+        padding: 5px;
+        background: #fff;
+    }
+
+    .timeline-info {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .company-name {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #f0f0f0;
+        margin: 0 0 5px 0;
+    }
+
+    .location {
+        font-size: 0.9rem;
+        color: #b8b8b8;
+        margin: 0;
+    }
+
+    .timeline-date {
+        color: #3498db;
+        font-weight: 500;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    .timeline-date i {
+        margin-right: 5px;
+    }
+
+    .timeline-body {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #4a5568;
+    }
+
+    .position-title {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: #2ecc71;
+        margin: 0 0 15px 0;
+    }
+
+    .read-more-btn {
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        border: none;
+        padding: 8px 20px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+        background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
+    }
+
+    /* Mobile Responsive */
+    @@media screen and (max-width: 768px) {
+        .timeline::before {
+            left: 15px;
+        }
+
+        .timeline-item {
+            padding-left: 50px;
+        }
+
+        .timeline-marker {
+            left: 7px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .timeline-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+        }
+
+        .position-title {
+            font-size: 1rem;
+        }
+
+        .timeline-card {
+            padding: 20px;
+        }
+    }
+
+    /* Modal Improvements */
+    .modal-content {
+        background-color: #1a202c;
+        border: 1px solid #4a5568;
+        color: #e4e4e7;
+    }
+
+    .modal-header {
+        background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+        border-bottom: 1px solid #4a5568;
+    }
+
+    .modal-title {
+        color: #ffffff !important;
+    }
+
+    .modal-body {
+        color: #e4e4e7;
+    }
+
+    .modal-body ul {
+        padding-left: 20px;
+    }
+
+    .modal-body li {
+        margin-bottom: 10px;
+        color: #e4e4e7;
+    }
+
+    .modal-footer {
+        border-top: 1px solid #4a5568;
+        background-color: #2d3748;
+    }
+</style>
