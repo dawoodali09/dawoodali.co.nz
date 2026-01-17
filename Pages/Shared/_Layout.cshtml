@@ -6,10 +6,10 @@
     <title>Dawood Ali - @ViewBag.Title</title>
 
     <link href="~/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="~/css/font-awesome.css" rel="stylesheet">
     <link href="~/css/basic.css" rel="stylesheet">
     <link href="~/css/custom.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <link href="~/css/improvements.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet'>
 
     <link rel="apple-touch-icon" sizes="180x180" href="~/apple-touch-icon.png">
@@ -31,13 +31,11 @@
     </script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  @*   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> *@
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
-    <link href="~/css/font-awesome.min.css" rel="stylesheet">
-    <link href="~/css/font-awesome2.css" rel="stylesheet">
+    <!-- Font Awesome 5.15.3 - Local -->
+    <link href="~/css/font-awesome2.min.css" rel="stylesheet">
 </head>
-<body style="background-color:black;">
+<body>
     <div id="wrapper">
         <nav class="navbar navbar-default navbar-cls-top" style="margin-bottom: 0;">
             <div class="navbar-header">
@@ -57,14 +55,14 @@
                 </div>
             </div>
             <div class="header-right">
-                <a href="mailto:dawoodali@gmail.com" title="Email"><i class="fa fa-envelope small" style="color:black;"> <b>dawoodali@gmail.com</b></i></a> <br>               
+                <a href="mailto:dawoodali@gmail.com" title="Email"><i class="fas fa-envelope small" > <b>dawoodali@gmail.com</b></i></a> <br>               
                 
                 <a href="https://www.tiktok.com/@@dawoodali_009" target="_blank" title="Tiktok"><i class="fab fa-tiktok black pull-right" style="margin-left:3px; text-decoration:none; color:black;"></i></a>
-                <a href="https://github.com/dawoodali09" target="_blank" title="Github"><i class="fa fa-github pull-right" style="color:black;"></i></a>                
-                <a href="http://x.com/dawoodali" target="_blank" title="X"><i class="fa fa-twitter pull-right" style="color:black;"></i></a>
-                <a href="https://www.youtube.com/dawoodali009" target="_blank" title="Youtube Channel"><i class="fa fa-youtube pull-right" style="color:black;"></i></a>
-                <a href="https://www.facebook.com/itsdawoodali/" target="_blank" title="Facebook"><i class="fa fa-facebook pull-right" style="color:black;"></i></a>
-                <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"><i class="fa fa-linkedin pull-right" style="color:black;"></i></a>
+                <a href="https://github.com/dawoodali09" target="_blank" title="Github"><i class="fab fa-github pull-right" ></i></a>                
+                <a href="http://x.com/dawoodali" target="_blank" title="X"><i class="fab fa-twitter pull-right" ></i></a>
+                <a href="https://www.youtube.com/dawoodali009" target="_blank" title="Youtube Channel"><i class="fab fa-youtube pull-right" ></i></a>
+                <a href="https://www.facebook.com/itsdawoodali/" target="_blank" title="Facebook"><i class="fab fa-facebook pull-right" ></i></a>
+                <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin pull-right" ></i></a>
             </div>
         </nav>
 
@@ -76,24 +74,24 @@
                             <label style="margin-top:10px; margin-left:-10px;" class="cursor typewriter-animation">@ViewBag.Title</label>
                         </div>
                     </li>
-                    <li><a asp-area="" asp-page="/Index"><i class="fa fa-home"></i> Home</a></li>                    
-                    <li><a asp-area="" asp-page="/About"><i class="fa fa-user"></i> About Me</a></li>
-                    <li><a asp-area="" asp-page="/WorkHistory"><i class="fa fa-road"></i> Career</a></li>
-                    <li><a asp-area="" asp-page="/Education"><i class="fa fa-mortar-board"></i>Education & Certifications</a></li>
-                    <li><a asp-area="" asp-page="/Skills"><i class="fa fa-book"></i> Skills & Expertise</a></li>
-                    <li><a asp-area="" asp-page="/ProjectsAndCaseStudies"><i class="fa fa-pie-chart"></i> Projects & Case Studies</a></li>
-                    @*<li><a asp-area="" asp-page="/blogs"><i class="fa fa-group"></i> Thought Leadership - Blog</a></li> *@
-                    @* <li><a asp-area="" asp-page="/Videos"><i class="fa fa-film"></i> Media & Videos</a></li> *@
-                    <li><a href="~/assets/Files/DawoodAli.pdf" target="_blank"><i class="fa fa-cloud-download"></i> Download Resume</a></li>
-                    <li><a asp-area="" asp-page="/contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a asp-area="" asp-page="/Index"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a asp-area="" asp-page="/About"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a asp-area="" asp-page="/WorkHistory"><i class="fas fa-road"></i> Career</a></li>
+                    <li><a asp-area="" asp-page="/Education"><i class="fas fa-graduation-cap"></i> Education & Certifications</a></li>
+                    <li><a asp-area="" asp-page="/Skills"><i class="fas fa-book"></i> Skills & Expertise</a></li>
+                    <li><a asp-area="" asp-page="/ProjectsAndCaseStudies"><i class="fas fa-chart-pie"></i> Projects & Case Studies</a></li>
+                    @*<li><a asp-area="" asp-page="/blogs"><i class="fas fa-users"></i> Thought Leadership - Blog</a></li> *@
+                    @* <li><a asp-area="" asp-page="/Videos"><i class="fas fa-film"></i> Media & Videos</a></li> *@
+                    <li><a href="~/assets/Files/DawoodAli.pdf" target="_blank"><i class="fas fa-cloud-download-alt"></i> Download Resume</a></li>
+                    <li><a asp-area="" asp-page="/contact"><i class="fas fa-comment"></i> Contact</a></li>
                     <li>
                         <div class="page-caption-bot">
                             <a href="https://www.tiktok.com/@@dawoodali_009" target="_blank" title="Tiktok"><i class="fab fa-tiktok" style="text-decoration:none; outline:none; color:#4380B8;"></i></a>
-                            <a href="https://github.com/dawoodali09" target="_blank" title="Github"><i class="fa fa-github" style=""></i></a>
-                            <a href="http://x.com/dawoodali" target="_blank" title="X"><i class="fa fa-twitter" style=""></i></a>
-                            <a href="https://www.youtube.com/dawoodali009" target="_blank" title="Youtube Channel"><i class="fa fa-youtube" style=""></i></a>
-                            <a href="https://www.facebook.com/itsdawoodali/" target="_blank" title="Facebook"><i class="fa fa-facebook" style=""></i></a>
-                            <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"><i class="fa fa-linkedin" style=""></i></a>
+                            <a href="https://github.com/dawoodali09" target="_blank" title="Github"><i class="fab fa-github" style=""></i></a>
+                            <a href="http://x.com/dawoodali" target="_blank" title="X"><i class="fab fa-twitter" style=""></i></a>
+                            <a href="https://www.youtube.com/dawoodali009" target="_blank" title="Youtube Channel"><i class="fab fa-youtube" style=""></i></a>
+                            <a href="https://www.facebook.com/itsdawoodali/" target="_blank" title="Facebook"><i class="fab fa-facebook" style=""></i></a>
+                            <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin" style=""></i></a>
                         </div>
                     </li>
                     
@@ -109,11 +107,11 @@
           
             <div class="page-caption-footer">
                 <a href="https://www.tiktok.com/@@dawoodali_009" target="_blank" title="Tiktok"><i class="fab fa-tiktok" style="text-decoration:none; outline:none;"></i></a>
-                <a href="https://github.com/dawoodali09" target="_blank" title="Github"><i class="fa fa-github" style=""></i></a>
-                <a href="http://x.com/dawoodali" target="_blank" title="X"><i class="fa fa-twitter" style=""></i></a>
-                <a href="https://www.youtube.com/dawoodali009" target="_blank" title="Youtube Channel"><i class="fa fa-youtube" style=""></i></a>
-                <a href="https://www.facebook.com/prodawood/?fref=ts" target="_blank" title="Facebook"><i class="fa fa-facebook" style=""></i></a>
-                <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"><i class="fa fa-linkedin" style=""></i></a>
+                <a href="https://github.com/dawoodali09" target="_blank" title="Github"><i class="fab fa-github" style=""></i></a>
+                <a href="http://x.com/dawoodali" target="_blank" title="X"><i class="fab fa-twitter" style=""></i></a>
+                <a href="https://www.youtube.com/dawoodali009" target="_blank" title="Youtube Channel"><i class="fab fa-youtube" style=""></i></a>
+                <a href="https://www.facebook.com/prodawood/?fref=ts" target="_blank" title="Facebook"><i class="fab fa-facebook" style=""></i></a>
+                <a href="https://nz.linkedin.com/in/dawoodali009" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin" style=""></i></a>
             </div>
             <div style="text-align:center;">www.dawoodali.co.nz &copy; @DateTime.UtcNow.Year</div>
         </div>

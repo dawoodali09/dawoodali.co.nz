@@ -1,4 +1,4 @@
-﻿@page
+@page
 @model dawoodali.co.nz.Pages.ProjectsAndCaseStudiesModel
 
 @{
@@ -6,72 +6,632 @@
 }
 
 <style>
-    .col-12 {
-        padding: 10px;
+    /* ============================================= */
+    /* PROJECTS PAGE - MODERN REDESIGN */
+    /* ============================================= */
+
+    .projects-header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        border-radius: 16px;
+        margin-bottom: 40px;
+        border: 1px solid rgba(99, 102, 241, 0.3);
+        position: relative;
+        overflow: hidden;
     }
 
-    h3 {
-        color: #333;
-        font-size: 18px;
+    .projects-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #f472b6, #818cf8, #22d3ee, #34d399);
+    }
+
+    .projects-header h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #f0f0f0;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .projects-header .subtitle {
+        font-size: 1.25rem;
+        color: #a5b4fc;
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 1.9;
+        font-style: italic;
+    }
+
+    /* Filter Tabs */
+    .filter-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .filter-btn {
+        padding: 14px 32px;
+        border: 2px solid transparent;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .filter-btn.all {
+        background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+        color: #fff;
+    }
+
+    .filter-btn.academic {
+        background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+        color: #fff;
+    }
+
+    .filter-btn.professional {
+        background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        color: #fff;
+    }
+
+    .filter-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    }
+
+    .filter-btn.active {
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3), 0 10px 30px rgba(99, 102, 241, 0.4);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    /* Project Card */
+    .project-card {
+        background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(148, 163, 184, 0.1);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(99, 102, 241, 0.3);
+        border-color: rgba(99, 102, 241, 0.5);
+    }
+
+    .project-card.academic {
+        border-top: 4px solid #22d3ee;
+    }
+
+    .project-card.professional {
+        border-top: 4px solid #34d399;
+    }
+
+    .card-header {
+        padding: 25px 25px 15px;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+    }
+
+    .card-header h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #f8fafc;
+        margin: 0 0 14px 0;
+        line-height: 1.4;
+    }
+
+    .card-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 1.00rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .badge-academic {
+        background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+        color: #fff;
+    }
+
+    .badge-professional {
+        background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+        color: #fff;
+    }
+
+    .badge-date {
+        background: rgba(99, 102, 241, 0.2);
+        color: #a5b4fc;
+        border: 1px solid rgba(99, 102, 241, 0.3);
+    }
+
+    .badge-date i {
+        margin-right: 6px;
+    }
+
+    .card-body {
+        padding: 22px 25px;
+        flex-grow: 1;
+        color: #cbd5e1;
+        font-size: 1.00rem;
+        line-height: 1.8;
+    }
+
+    .card-body p {
+        margin-bottom: 16px;
+        color: #e2e8f0;
+        font-size: 1.00rem;
+    }
+
+    .card-body strong, .card-body b {
+        color: #f472b6;
+        font-weight: 600;
+    }
+
+    .card-body ul {
+        margin: 12px 0;
+        padding-left: 22px;
+    }
+
+    .card-body li {
         margin-bottom: 10px;
+        color: #c8d4e0;
+        font-size: 1.05rem;
     }
 
-   
-
-    a {
-        font-weight: bold;
-        transition: color 0.3s ease;
+    .card-body h3 {
+        font-size: 1.25rem;
+        color: #22d3ee;
+        margin: 22px 0 12px;
     }
 
-        a:hover {
-            color: #0056b3;
+    .card-body ol {
+        margin: 12px 0;
+        padding-left: 22px;
+    }
+
+    .card-body ol li {
+        color: #c8d4e0;
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+    }
+
+    /* Images in cards */
+    .card-body img {
+        border-radius: 12px;
+        margin: 20px 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Video iframes */
+    .card-body iframe {
+        width: 100%;
+        height: 250px;
+        border-radius: 12px;
+        margin: 20px 0;
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-footer {
+        padding: 20px 25px;
+        border-top: 1px solid rgba(148, 163, 184, 0.1);
+        background: rgba(15, 23, 42, 0.5);
+    }
+
+    .download-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 28px;
+        background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+    }
+
+    .download-btn:hover {
+        background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+        transform: translateX(5px);
+        box-shadow: 0 10px 25px rgba(236, 72, 153, 0.4);
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .download-btn i {
+        font-size: 1.1rem;
+    }
+
+    /* Section Divider */
+    .section-divider {
+        text-align: center;
+        margin: 50px 0 40px;
+        position: relative;
+    }
+
+    .section-divider::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.5), transparent);
+    }
+
+    .section-divider h2 {
+        display: inline-block;
+        background: #0f1419;
+        padding: 0 30px;
+        position: relative;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    .section-divider.academic h2 {
+        color: #22d3ee;
+    }
+
+    .section-divider.professional h2 {
+        color: #34d399;
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 30px 0;
+        flex-wrap: wrap;
+    }
+
+    .stat-item {
+        text-align: center;
+        padding: 20px 30px;
+        background: rgba(99, 102, 241, 0.1);
+        border-radius: 12px;
+        border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .stat-number {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #818cf8;
+        display: block;
+    }
+
+    .stat-label {
+        font-size: 1.05rem;
+        color: #94a3b8;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    /* No projects message */
+    .no-projects {
+        text-align: center;
+        padding: 60px 20px;
+        color: #94a3b8;
+        font-size: 1.2rem;
+    }
+
+    /* Hidden class for filtering */
+    .project-card.hidden {
+        display: none;
+    }
+
+    /* ============================================= */
+    /* RESPONSIVE DESIGN */
+    /* ============================================= */
+
+    @@media screen and (max-width: 768px) {
+        .projects-header h1 {
+            font-size: 2rem;
         }
 
-
-
-        div[style*="box-shadow"]:hover {
-            transform: scale(0.99);
+        .projects-header .subtitle {
+            font-size: 1.1rem;
+            padding: 0 10px;
         }
+
+        .projects-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .filter-tabs {
+            gap: 10px;
+        }
+
+        .filter-btn {
+            padding: 12px 22px;
+            font-size: 1rem;
+        }
+
+        .card-header h3 {
+            font-size: 1.35rem;
+        }
+
+        .card-body {
+            font-size: 1.05rem;
+        }
+
+        .card-body p {
+            font-size: 1.05rem;
+        }
+
+        .stats-bar {
+            gap: 15px;
+        }
+
+        .stat-item {
+            padding: 15px 20px;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+        }
+
+        .stat-label {
+            font-size: 1.00rem;
+        }
+
+        .section-divider h2 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .card-body iframe {
+            height: 200px;
+        }
+    }
+
+    @@media screen and (max-width: 480px) {
+        .projects-header {
+            padding: 25px 15px;
+        }
+
+        .projects-header h1 {
+            font-size: 1.7rem;
+        }
+
+        .projects-header .subtitle {
+            font-size: 1rem;
+        }
+
+        .card-header, .card-body, .card-footer {
+            padding: 15px;
+        }
+
+        .card-header h3 {
+            font-size: 1.25rem;
+        }
+
+        .card-body {
+            font-size: 1.00rem;
+        }
+
+        .card-body p {
+            font-size: 1.00rem;
+        }
+
+        .card-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .download-btn {
+            width: 100%;
+            justify-content: center;
+            font-size: 1rem;
+        }
+    }
 </style>
-
 
 <div id="page-wrapper">
     <div id="page-inner">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-head-line">Past Academic and Professional Projects</h1>
-                <h1 class="page-subhead-line">
-                    “Throughout my career and education, I have gained valuable insights and expertise from the projects I have undertaken. Each project has contributed to my professional growth, refining my skills and deepening my knowledge. I believe that the lessons learned and the outcomes achieved can serve as valuable references for others, offering insights and inspiration for similar challenges and opportunities.”
-                </h1>
-            </div>
+        <!-- Header Section -->
+        <div class="projects-header">
+            <h1><i class="fas fa-project-diagram"></i> Projects & Case Studies</h1>
+            <p class="subtitle">
+                "Throughout my career and education, I have gained valuable insights and expertise from the projects I have undertaken.
+                Each project has contributed to my professional growth, refining my skills and deepening my knowledge."
+            </p>
         </div>
-        <!-- /. ROW -->
-        <div class="row">
-            @if (Model.Projects != null)
-            {
-                @for (int i = 0; i < Model.Projects.Count; i++)
+
+        @if (Model.Projects != null && Model.Projects.Any())
+        {
+            var academicProjects = Model.Projects.Where(p => p["ProjectType"]?.ToString() == "Academic").ToList();
+            var professionalProjects = Model.Projects.Where(p => p["ProjectType"]?.ToString() == "Professional").ToList();
+
+            <!-- Stats Bar -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number">@Model.Projects.Count</span>
+                    <span class="stat-label">Total Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">@academicProjects.Count</span>
+                    <span class="stat-label">Academic</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">@professionalProjects.Count</span>
+                    <span class="stat-label">Professional</span>
+                </div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn all active" onclick="filterProjects('all')">
+                    <i class="fas fa-th-large"></i> All Projects
+                </button>
+                <button class="filter-btn academic" onclick="filterProjects('academic')">
+                    <i class="fas fa-graduation-cap"></i> Academic
+                </button>
+                <button class="filter-btn professional" onclick="filterProjects('professional')">
+                    <i class="fas fa-briefcase"></i> Professional
+                </button>
+            </div>
+
+            <!-- Academic Projects Section -->
+            <div class="section-divider academic" data-section="academic">
+                <h2><i class="fas fa-graduation-cap"></i> Academic Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                @foreach (var project in academicProjects)
                 {
-                    var project = Model.Projects[i];
-                    <div class="col-12" style="margin-bottom: 20px;">
-                        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <div class="project-card academic" data-type="academic">
+                        <div class="card-header">
                             <h3>@project["Project Name"]</h3>
-                            <p><strong>Date:</strong> @project["Dates"]</p>
-                            <p><strong>Type:</strong> @project["ProjectType"]</p>
-                            <div>@Html.Raw(project["Description"])</div>
-                            @if ((bool)project["HasLink"])
-                            {
-                                <p><a href="@project["Link"]" target="_blank" style="color: #007bff; text-decoration: underline;">Download</a></p>
-                            }
+                            <div class="card-meta">
+                                <span class="badge badge-academic">
+                                    <i class="fas fa-graduation-cap"></i>&nbsp; Academic
+                                </span>
+                                <span class="badge badge-date">
+                                    <i class="fas fa-calendar-alt"></i> @project["Dates"]
+                                </span>
+                            </div>
                         </div>
+                        <div class="card-body">
+                            @Html.Raw(project["Description"])
+                        </div>
+                        @if ((bool)project["HasLink"])
+                        {
+                            <div class="card-footer">
+                                <a href="@project["Link"]" target="_blank" class="download-btn">
+                                    <i class="fas fa-download"></i> Download Document
+                                </a>
+                            </div>
+                        }
                     </div>
                 }
-            }
-            else
-            {
+            </div>
+
+            <!-- Professional Projects Section -->
+            <div class="section-divider professional" data-section="professional">
+                <h2><i class="fas fa-briefcase"></i> Professional Projects</h2>
+            </div>
+
+            <div class="projects-grid">
+                @foreach (var project in professionalProjects)
+                {
+                    <div class="project-card professional" data-type="professional">
+                        <div class="card-header">
+                            <h3>@project["Project Name"]</h3>
+                            <div class="card-meta">
+                                <span class="badge badge-professional">
+                                    <i class="fas fa-briefcase"></i>&nbsp; Professional
+                                </span>
+                                <span class="badge badge-date">
+                                    <i class="fas fa-calendar-alt"></i> @project["Dates"]
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            @Html.Raw(project["Description"])
+                        </div>
+                        @if ((bool)project["HasLink"])
+                        {
+                            <div class="card-footer">
+                                <a href="@project["Link"]" target="_blank" class="download-btn">
+                                    <i class="fas fa-download"></i> Download Document
+                                </a>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="no-projects">
+                <i class="fas fa-folder-open" style="font-size: 3rem; margin-bottom: 20px; color: #6366f1;"></i>
                 <p>No projects available to display.</p>
-            }
-        </div>
+            </div>
+        }
     </div>
-    <!-- /. PAGE INNER -->
 </div>
-<!-- /. PAGE WRAPPER -->
+
+@section scripts {
+<script>
+    function filterProjects(type) {
+        // Update active button
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.target.closest('.filter-btn').classList.add('active');
+
+        // Filter cards
+        const cards = document.querySelectorAll('.project-card');
+        const academicDivider = document.querySelector('.section-divider.academic');
+        const professionalDivider = document.querySelector('.section-divider.professional');
+
+        if (type === 'all') {
+            cards.forEach(card => card.classList.remove('hidden'));
+            academicDivider.style.display = 'block';
+            professionalDivider.style.display = 'block';
+        } else if (type === 'academic') {
+            cards.forEach(card => {
+                if (card.dataset.type === 'academic') {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            academicDivider.style.display = 'block';
+            professionalDivider.style.display = 'none';
+        } else if (type === 'professional') {
+            cards.forEach(card => {
+                if (card.dataset.type === 'professional') {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+            academicDivider.style.display = 'none';
+            professionalDivider.style.display = 'block';
+        }
+    }
+</script>
+}

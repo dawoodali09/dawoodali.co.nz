@@ -1,86 +1,461 @@
-﻿@page
+@page
 @model dawoodali.co.nz.Pages.EducationModel
 @{
-}
-
-@{
     ViewBag.Title = "Academic Qualifications";
-
 }
 
 <div id="page-wrapper">
     <div id="page-inner">
+        <!-- Header Section -->
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="page-head-line">Academic Qualifications</h1>
-                <h1 class="page-subhead-line">
-                    “ Education is the passport to the future, for tomorrow belongs to those who prepare for it today.”
-                </h1>
+            <div class="col-12 text-center mb-4">
+                <h1 class="page-head-line">Education & Certifications</h1>
+                <p class="lead education-quote" style="font-style: italic; color: #00d4ff; margin-top: 20px; font-size: 18px;">
+                    <i class="fas fa-quote-left me-2"></i>
+                    Education is the passport to the future, for tomorrow belongs to those who prepare for it today.
+                    <i class="fas fa-quote-right ms-2"></i>
+                </p>
+                <p class="text-muted" style="margin-top: 10px;">- Malcolm X</p>
             </div>
         </div>
-        <!-- /. ROW  -->
+
+        <!-- Education Timeline -->
         <div class="row">
-            <div class="col-md-12">
-                <table class="table table-hover" style="font-family:Verdana; font-size:medium;">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Institute</th>
-                            <th>Dates</th>
-                            <th>Qualification</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="vertical-align:middle;">1</td>
-                            <td style="vertical-align:middle;">
-                                <img src="~/assets/img/OtagoLogo.png" class="img-thumbnail" height="90px" width="130px" />
-                                University of Otago
-                            </td>
-                            <td style="vertical-align:middle;">2022-24</td>
-                            <td style="vertical-align:middle;">MBA - Master of Business Administration <a href="https://www.otago.ac.nz/mba" target="_blank">More Info</a></td>
-                         
-                           
-                        </tr>
-                        <tr>
-                            <td style="vertical-align:middle;">2</td>
-                            <td style="vertical-align:middle;">
-                                <img src="~/assets/img/fastlogo.png" class="img-thumbnail" height="90px" width="130px" />
-                                National University Of Computer & Emerging Sciences (FAST)
-                            </td>
-                            <td style="vertical-align:middle;">2004-08</td>
-                            <td style="vertical-align:middle;">BS - Computer Science <a href="http://nu.edu.pk" target="_blank">More  Info</td>
-                            
-                        </tr>
+            <div class="col-12">
+                <div class="education-timeline">
 
+                    <!-- MBA -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12 text-center mb-3 mb-md-0">
+                                    <img src="~/assets/img/OtagoLogo.png" class="edu-logo" alt="University of Otago" />
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <div class="timeline-header">
+                                        <h3 class="degree-title">Master of Business Administration (MBA)</h3>
+                                        <span class="timeline-date">
+                                            <i class="fas fa-calendar-alt me-2"></i>2022 - 2024
+                                        </span>
+                                    </div>
+                                    <h4 class="institution-name">
+                                        <i class="fas fa-university me-2"></i>University of Otago
+                                    </h4>
+                                    <p class="edu-description">
+                                        Advanced business education focusing on strategic management, organizational leadership,
+                                        finance, marketing, and operations excellence. Developed expertise in strategic planning,
+                                        international business, sustainable enterprises, and evidence-based decision making.
+                                    </p>
+                                    <div class="edu-highlights">
+                                        <span class="badge badge-custom">Strategic Management</span>
+                                        <span class="badge badge-custom">Leadership</span>
+                                        <span class="badge badge-custom">Finance</span>
+                                        <span class="badge badge-custom">Operations</span>
+                                    </div>
+                                    <a href="https://www.otago.ac.nz/mba" target="_blank" class="btn-more-info">
+                                        <i class="fas fa-external-link-alt me-2"></i>More Information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td style="vertical-align:middle;">3</td>
-                            <td style="vertical-align:middle;">
-                                <img src="~/assets/img/SPC-logo.gif" class="img-thumbnail" height="90px" width="130px" />
-                                Saint Patrick's Govt College
-                            </td>
-                            <td style="vertical-align:middle;">2002-04</td>
-                            <td style="vertical-align:middle;">Inter mediate education Science Pre-engineering <a href="http://www.stpatrickscollege.edu.pk/" target="_blank">More Info</a> </td>
-                            
-                        </tr>
+                    <!-- BS Computer Science -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12 text-center mb-3 mb-md-0">
+                                    <img src="~/assets/img/fastlogo.png" class="edu-logo" alt="FAST University" />
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <div class="timeline-header">
+                                        <h3 class="degree-title">Bachelor of Science in Computer Science</h3>
+                                        <span class="timeline-date">
+                                            <i class="fas fa-calendar-alt me-2"></i>2004 - 2008
+                                        </span>
+                                    </div>
+                                    <h4 class="institution-name">
+                                        <i class="fas fa-university me-2"></i>National University of Computer & Emerging Sciences (FAST)
+                                    </h4>
+                                    <p class="edu-description">
+                                        Comprehensive computer science education covering software engineering, algorithms,
+                                        data structures, databases, networking, and artificial intelligence. Built strong
+                                        foundation in programming, system design, and computational problem-solving.
+                                    </p>
+                                    <div class="edu-highlights">
+                                        <span class="badge badge-custom">Software Engineering</span>
+                                        <span class="badge badge-custom">Algorithms</span>
+                                        <span class="badge badge-custom">Databases</span>
+                                        <span class="badge badge-custom">AI</span>
+                                    </div>
+                                    <a href="http://nu.edu.pk" target="_blank" class="btn-more-info">
+                                        <i class="fas fa-external-link-alt me-2"></i>More Information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <tr>
-                            <td style="vertical-align:middle;">4</td>
-                            <td style="vertical-align:middle;">
-                                <img src="~/assets/img/hpsLogo.jpg" class="img-thumbnail" height="90px" width="130px" />
-                                Habib Public School
-                            </td>
-                            <td style="vertical-align:middle;">1992-2002</td>
-                            <td style="vertical-align:middle;">Primary & Secondary Schooling with major science subjects. <a href="http://habibschools.edu.pk" target="_blank">More Info</a>   </td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
+                    <!-- Intermediate Education -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12 text-center mb-3 mb-md-0">
+                                    <img src="~/assets/img/SPC-logo.gif" class="edu-logo" alt="Saint Patrick's College" />
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <div class="timeline-header">
+                                        <h3 class="degree-title">Intermediate - Pre-Engineering</h3>
+                                        <span class="timeline-date">
+                                            <i class="fas fa-calendar-alt me-2"></i>2002 - 2004
+                                        </span>
+                                    </div>
+                                    <h4 class="institution-name">
+                                        <i class="fas fa-school me-2"></i>Saint Patrick's Government College
+                                    </h4>
+                                    <p class="edu-description">
+                                        Pre-engineering track with focus on science subjects including Mathematics, Physics,
+                                        and Chemistry. This foundation prepared the pathway to computer science and technical education.
+                                    </p>
+                                    <div class="edu-highlights">
+                                        <span class="badge badge-custom">Mathematics</span>
+                                        <span class="badge badge-custom">Physics</span>
+                                        <span class="badge badge-custom">Chemistry</span>
+                                    </div>
+                                    <a href="http://www.stpatrickscollege.edu.pk/" target="_blank" class="btn-more-info">
+                                        <i class="fas fa-external-link-alt me-2"></i>More Information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Primary & Secondary School -->
+                    <div class="timeline-item">
+                        <div class="timeline-badge">
+                            <i class="fas fa-school-flag"></i>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-3 col-12 text-center mb-3 mb-md-0">
+                                    <img src="~/assets/img/hpsLogo.jpg" class="edu-logo" alt="Habib Public School" />
+                                </div>
+                                <div class="col-md-9 col-12">
+                                    <div class="timeline-header">
+                                        <h3 class="degree-title">Primary & Secondary Education</h3>
+                                        <span class="timeline-date">
+                                            <i class="fas fa-calendar-alt me-2"></i>1992 - 2002
+                                        </span>
+                                    </div>
+                                    <h4 class="institution-name">
+                                        <i class="fas fa-school me-2"></i>Habib Public School
+                                    </h4>
+                                    <p class="edu-description">
+                                        Foundation education with major science subjects. Developed critical thinking,
+                                        analytical skills, and academic discipline during formative years.
+                                    </p>
+                                    <div class="edu-highlights">
+                                        <span class="badge badge-custom">Science</span>
+                                        <span class="badge badge-custom">Mathematics</span>
+                                        <span class="badge badge-custom">Foundation</span>
+                                    </div>
+                                    <a href="http://habibschools.edu.pk" target="_blank" class="btn-more-info">
+                                        <i class="fas fa-external-link-alt me-2"></i>More Information
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Certifications Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2 class="section-title text-center mb-4">
+                    <i class="fas fa-certificate me-2"></i>Professional Certifications & Continuous Learning
+                </h2>
+                <div class="cert-note text-center">
+                    <p class="lead" style="color: #b8b8b8;">
+                        Committed to continuous professional development through industry certifications,
+                        specialized training programs, and staying current with emerging technologies and best practices.
+                    </p>
+                </div>
             </div>
         </div>
 
     </div>
-    <!-- /. PAGE INNER  -->
 </div>
-<!-- /. PAGE WRAPPER  -->
+
+<style>
+    /* Education Page Styles */
+    .education-quote {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Timeline Styles */
+    .education-timeline {
+        position: relative;
+        padding: 20px 0;
+        margin-top: 20px;
+    }
+
+    .education-timeline::before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .timeline-item {
+        position: relative;
+        padding-left: 80px;
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+    }
+
+    .timeline-badge {
+        position: absolute;
+        left: 8px;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 20px;
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        z-index: 10;
+    }
+
+    .timeline-card {
+        background: #1a1a2e;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        border-left: 4px solid transparent;
+    }
+
+    .timeline-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+        border-left-color: #667eea;
+    }
+
+    .timeline-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .degree-title {
+        color: #00d4ff;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        flex: 1;
+    }
+
+    .timeline-date {
+        color: #9ca3af;
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap;
+        background: rgba(102, 126, 234, 0.2);
+        padding: 5px 15px;
+        border-radius: 20px;
+    }
+
+    .institution-name {
+        color: #f0f0f0;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .edu-description {
+        color: #b8b8b8;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .edu-logo {
+        max-width: 150px;
+        max-height: 100px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        background: white;
+        padding: 10px;
+        object-fit: contain;
+    }
+
+    .edu-highlights {
+        margin-bottom: 20px;
+    }
+
+    .badge-custom {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 13px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        display: inline-block;
+        font-weight: 500;
+    }
+
+    .btn-more-info {
+        display: inline-block;
+        color: #00d4ff;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 8px 20px;
+        border: 2px solid #00d4ff;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-more-info:hover {
+        background: #00d4ff;
+        color: #1a1a2e;
+        text-decoration: none;
+        transform: translateX(5px);
+    }
+
+    .section-title {
+        color: #00d4ff;
+        font-size: 28px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 15px;
+    }
+
+    .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        border-radius: 2px;
+    }
+
+    /* Mobile Responsive Styles */
+    @@media (max-width: 768px) {
+        .education-timeline::before {
+            left: 20px;
+        }
+
+        .timeline-item {
+            padding-left: 60px;
+        }
+
+        .timeline-badge {
+            left: 2px;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+
+        .timeline-card {
+            padding: 20px;
+        }
+
+        .degree-title {
+            font-size: 20px;
+        }
+
+        .timeline-date {
+            font-size: 12px;
+            padding: 4px 10px;
+        }
+
+        .institution-name {
+            font-size: 16px;
+        }
+
+        .edu-description {
+            font-size: 14px;
+        }
+
+        .edu-logo {
+            max-width: 120px;
+            max-height: 80px;
+        }
+
+        .section-title {
+            font-size: 22px;
+        }
+
+        .timeline-header {
+            flex-direction: column;
+        }
+
+        .education-quote {
+            font-size: 16px !important;
+        }
+
+        .badge-custom {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+    }
+
+    @@media (max-width: 576px) {
+        .degree-title {
+            font-size: 18px;
+        }
+
+        .timeline-card {
+            padding: 15px;
+        }
+
+        .btn-more-info {
+            font-size: 13px;
+            padding: 6px 15px;
+        }
+    }
+
+    /* Animation */
+    .timeline-item {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    @@keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
